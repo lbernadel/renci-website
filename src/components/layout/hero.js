@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
@@ -26,15 +26,15 @@ const Content = styled.div(({ theme }) => `
   }
 `)
 
-const Overlay = styled.div(({ theme, color }) => `
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: ${ color };
-  opacity: 0.1;
-`)
+// const Overlay = styled.div(({ theme, color }) => `
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: ${ color };
+//   opacity: 0.1;
+// `)
 
 const Wrapper = styled.div(({ theme, backgroundColor }) => `
   position: relative;

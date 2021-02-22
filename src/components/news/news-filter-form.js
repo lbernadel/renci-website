@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 import { useFormState } from 'react-use-form-state'
-import { Select, TextInput } from '../form'
+import { Select } from '../form'
 import { useCollaborations, useGroups, useProjects, useTags } from '../../hooks'
 import { useNewsContext } from './news-context'
 import { Button } from '../../components/buttons'
@@ -70,14 +70,14 @@ export const NewsFilterForm = () => {
   const [groupOptions, setGroupOptions] = useState([])
   const [projectOptions, setProjectOptions] = useState([])
   const [topicOptions, setTopicOptions] = useState([])
-  const [, { text, select }] = useFormState()
+  const [, { select }] = useFormState()
 
   const usingFilters = useMemo(() => (filters.group || filters.project || filters.topic), [filters])
 
   useEffect(() => {
     // when filters, groups, or collaborations change
     // update the corresponding project options for the selected group
-    setGroupOptions(groups.concat(collaborations).map(group => ({ value: group.id, label: group.name })).sort((g, h) => g.label.toLowerCase() < h.label.toLowerCase() ? -1 : 1))
+    setGroupOptions(groupsAndCollaborations.map(group => ({ value: group.id, label: group.name })).sort((g, h) => g.label.toLowerCase() < h.label.toLowerCase() ? -1 : 1))
     setProjectOptions(projects.map(project => ({ value: project.id, label: project.name })).sort((p, q) => p.label.toLowerCase() < q.label.toLowerCase() ? -1 : 1))
     setTopicOptions(tags.map(tag => ({ value: tag.id, label: tag.name })).sort((t, s) => t.label.toLowerCase() < s.label.toLowerCase() ? -1 : 1))
   }, [])

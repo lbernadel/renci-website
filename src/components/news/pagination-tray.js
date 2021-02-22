@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Link } from '../link'
 import { Icon } from '../icon'
 import { useNewsContext } from './news-context'
-import { useLocation } from '@reach/router'
 
 const Wrapper = styled.nav(({ theme }) => `
   display: flex;
@@ -37,7 +36,6 @@ const PageLink = styled(Link)(({ theme }) => `
 
 export const PaginationTray = () => {
   const { page, prevPage, nextPage, pageCount, paginationRadius, filters, filtersUrl } = useNewsContext()
-  const location = useLocation()
 
   return (
     <Wrapper>

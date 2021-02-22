@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useMemo, useState } from 'react'
 import { SEO } from '../components/seo'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 import { navigate, useLocation } from '@reach/router'
 import { Container, Section, HorizontalRule } from '../components/layout'
 import { Title } from '../components/typography'
@@ -48,7 +48,6 @@ const filtersUrl = (params, basePath = '/news') => {
 }
 
 const NewsPage = () => {
-  const theme = useTheme()
   const location = useLocation()
   const { windowWidth } = useWindow()
   const articles = useNews() // all articles
@@ -76,7 +75,7 @@ const NewsPage = () => {
   }, [loading])
 
   const pageCount = useMemo(() => Math.ceil(filteredArticles.length / PER_PAGE), [filteredArticles.length])
-  const prevPage = useMemo(() => Math.max(1, page - 1), [page, pageCount])
+  const prevPage = useMemo(() => Math.max(1, page - 1), [page])
   const nextPage = useMemo(() => Math.min(pageCount, page + 1), [page, pageCount])
 
   useEffect(() => {
@@ -86,12 +85,12 @@ const NewsPage = () => {
     const queryProject = queryParams.get('project') || ''
     const queryTopic = queryParams.get('topic') || ''
     setPage(queryPage)
-    setFilters({
-      ...filters,
+    setFilters(prevFilters => ({
+      ...prevFilters,
       group: queryGroup,
       project: queryProject,
       topic: queryTopic,
-    })
+    }))
   }, [location.search])
 
   useEffect(() => {
@@ -115,7 +114,7 @@ const NewsPage = () => {
       newArticles = newArticles.filter(article => article.frontmatter.tags && article.frontmatter.tags.map(t => t.id).includes(filters.topic))
     }
     setFilteredArticles(newArticles)
-  }, [page, filters])
+  }, [filters, page])
 
   useEffect(() => {
     const pageOfNews = filteredArticles.slice((page - 1) * PER_PAGE, page * PER_PAGE)

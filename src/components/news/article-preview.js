@@ -1,24 +1,16 @@
 import React, { Fragment } from 'react'
-import styled, { useTheme } from 'styled-components'
+import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { Subheading } from '../typography'
 import { Container as Grid, Row, Col, Visible } from 'react-grid-system'
 import { ArrowLink } from '../link'
-import { Tag } from './tag'
 import { Label } from './label'
 import { NewsDate } from './news-date'
 
 const Wrapper = styled.article`
   margin: 0 -1rem;
 `
-
-const ArticleTitle = styled(Subheading)(({ theme }) => `
-  color: ${ theme.color.darkgrey };
-  font-weight: normal;
-  line-height: 1.25;
-  font-size: 24px;
-`)
 
 const TitleContainer = styled.div`
   & .row {
@@ -47,7 +39,6 @@ const BodyContainer = styled.div`
 `
 
 export const ArticlePreview = ({ article, path, compact = false }) => {
-  const theme = useTheme()
   const hasPreviewImage = (article.frontmatter.previewImage !== null) && (compact === false)
   
   return (

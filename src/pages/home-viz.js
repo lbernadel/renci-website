@@ -1,12 +1,7 @@
-import React, { Fragment } from "react"
-import styled from 'styled-components'
+import React from "react"
 import { SEO } from '../components/seo'
-import { Link } from 'gatsby'
 import { Container } from '../components/layout'
 import { Title, Heading, Paragraph } from '../components/typography'
-import HomeGraphic from '../images/home-graphic.png'
-
-const LearnMoreButton = styled(Link)``
 
 const HomeVizPage = () => {
   return (
