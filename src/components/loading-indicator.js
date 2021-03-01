@@ -45,6 +45,7 @@ const StyledRect = styled.rect(({ theme, duration, delay }) => css`
           return [...Array(n).keys()].map(column => {
             return (
               <StyledRect
+                key={ `square-${ row }-${ column }` }
                 x={ 0 } y={ 0 } rx={ 2 }
                 width={ width } height={ height }
                 transform={ `translate(${ column * (width + gap) }, ${ row * (height + gap) })` } duration={ `${ duration }ms` } delay={ `${ ( duration / (2 * n) ) * (row + column) }ms` }
