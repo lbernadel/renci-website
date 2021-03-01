@@ -97,7 +97,15 @@ export default ({ data, pageContext }) => {
               author && (
                 <span>
                   Author{ author.length > 1 && `s` }:&nbsp;
-                  { author.map((a, i) => <Fragment><Link to={ `/people/${ a.id }` }>{ a.fullName }</Link>{ i + 1 < author.length ? ', ' : '.' }</Fragment>) }
+                  {
+                    author
+                      .sort((a, b) => a.name.last < b.name.last ? -1 : 1)
+                      .map((a, i) => (
+                        <Fragment key={ `author-${ i }`}>
+                          <Link to={ `/people/${ a.id }` }>{ a.fullName }</Link>{ i + 1 < author.length ? ', ' : '.' }
+                        </Fragment>
+                      ))
+                  }
                 </span>
               )
             }
@@ -106,7 +114,7 @@ export default ({ data, pageContext }) => {
           <br />
           
           <Tags>
-            { articleTags.map(tag => <Tag link to={ tag.path } key={ tag.path }>{ tag.name }</Tag>) }
+            { articleTags.map(tag => <Tag link to={ tag.path } key={ `tag-${ tag.id }` }>{ tag.name }</Tag>) }
           </Tags>
 
           <HorizontalRule />
@@ -153,6 +161,10 @@ export const newsQuery = graphql`
         publishDate(formatString: "MMMM D, YYYY")
         author {
           id
+          name {
+            first
+            last
+          }
           fullName
           fields {
             path
