@@ -44,7 +44,7 @@ export default ({ data, pageContext }) => {
   const articleTags = groups
     .concat(collaborations)
     .concat(projects)
-    .concat(organizations)
+    // .concat(organizations)
     .concat(teams)
     .concat(people)
     // remove null items
