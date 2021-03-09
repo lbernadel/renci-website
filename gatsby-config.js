@@ -1,3 +1,6 @@
+require('dotenv').config({ path: `.env` })
+const algoliaQueries = require(`./gatsby/algolia-queries`)
+
 module.exports = {
   siteMetadata: {
     title: `RENCI`,
@@ -5,6 +8,16 @@ module.exports = {
     author: `mbwatson`,
   },
   plugins: [
+    {
+      // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        queries: algoliaQueries,
+        chunkSize: 100, // default: 1000
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
