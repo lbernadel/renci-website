@@ -75,7 +75,6 @@ const query = `{
       fields {
         path
       }
-      excerpt
       html
     }
   }
@@ -84,27 +83,32 @@ const query = `{
 module.exports = [
   {
     query: query,
+    indexName: `PEOPLE`,
     transformer: ({ data }) => data.people.nodes,
-    indexName: `PEOPLE`
   },
   {
     query: query,
+    indexName: `GROUPS`,
     transformer: ({ data }) => data.groups.nodes,
-    indexName: `GROUPS`
   },
   {
     query: query,
+    indexName: `COLLABORATIONS`,
     transformer: ({ data }) => data.collaborations.nodes,
-    indexName: `COLLABORATIONS`
   },
   {
     query: query,
+    indexName: `PROJECTS`,
     transformer: ({ data }) => data.projects.nodes,
-    indexName: `PROJECTS`
   },
   {
     query: query,
+    indexName: `NEWS`,
+    transformer: ({ data }) => data.news.nodes,
+  },
+  {
+    query: query,
+    indexName: `BLOG`,
     transformer: ({ data }) => data.blog.nodes,
-    indexName: `BLOG`
   },
 ]
