@@ -8,6 +8,7 @@
     "@loadable/component": "^5.14.1",
     "gatsby": "^2.27.5",
     "gatsby-image": "^2.6.0",
+    "gatsby-plugin-algolia": "^0.16.3",
     "gatsby-plugin-catch-links": "^2.9.0",
     "gatsby-plugin-manifest": "^2.7.0",
     "gatsby-plugin-offline": "^3.5.0",
@@ -32,7 +33,6 @@
     "react-use-form-state": "^0.13.2",
     "styled-components": "^5.2.1"
   },
-  "devDependencies": {},
   "keywords": [
     "gatsby"
   ],
