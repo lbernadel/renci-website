@@ -24,7 +24,7 @@ export const PersonResult = ({ hit }) => {
   return (
     <ResultWrapper>
       <ResultTitle>
-        <Link to={ hit.fields.path }>{ hit.fullName }</Link>
+        <Link to={ hit.fields.path }><Highlight attribute="fullName" hit={ hit } tagName="mark" /></Link>
       </ResultTitle>
     </ResultWrapper>
   )
@@ -34,7 +34,7 @@ export const GroupResult = ({ hit }) => {
   return (
     <ResultWrapper to={ hit.fields.path }>
       <ResultTitle>
-        <Link to={ hit.fields.path }>{ hit.name }</Link>
+        <Link to={ hit.fields.path }><Highlight attribute="name" hit={ hit } tagName="mark" /></Link>
       </ResultTitle>
     </ResultWrapper>
   )
@@ -44,7 +44,7 @@ export const CollaborationResult = ({ hit }) => {
   return (
     <ResultWrapper to={ hit.fields.path }>
       <ResultTitle>
-        <Link to={ hit.fields.path }>{ hit.name }</Link>
+        <Link to={ hit.fields.path }><Highlight attribute="name" hit={ hit } tagName="mark" /></Link>
       </ResultTitle>
     </ResultWrapper>
   )
@@ -54,7 +54,7 @@ export const ProjectResult = ({ hit }) => {
   return (
     <ResultWrapper to={ hit.fields.path }>
       <ResultTitle>
-        <Link to={ hit.fields.path }>{ hit.name }</Link>
+        <Link to={ hit.fields.path }><Highlight attribute="name" hit={ hit } tagName="mark" /></Link>
       </ResultTitle>
     </ResultWrapper>
   )
