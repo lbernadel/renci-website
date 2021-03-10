@@ -19,7 +19,7 @@ const StyledHits = styled(Hits)`
 const SearchPage = () => {
   return (
     <Container>
-      <SEO title="404: Not found" />
+      <SEO title="Search" />
 
       <Title>Search</Title>
 
