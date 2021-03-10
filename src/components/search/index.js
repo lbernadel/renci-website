@@ -1,5 +1,1 @@
-export * from './collaboration-result'
-export * from './group-result'
-export * from './news-result'
-export * from './person-result'
-export * from './project-result'
+export * from './result'

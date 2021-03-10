@@ -55,6 +55,7 @@ const query = `{
       frontmatter {
         title
         subtitle
+        publishDate(formatString: "MMMM DD, YYYY")
       }
       fields {
         path
@@ -71,6 +72,7 @@ const query = `{
       frontmatter {
         title
         subtitle
+        publishDate(formatString: "MMMM DD, YYYY")
       }
       fields {
         path

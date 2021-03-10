@@ -1,55 +1,72 @@
 import React from 'react'
-import { Container } from '../components/layout'
+import { Container, Section } from '../components/layout'
+import styled from 'styled-components'
 import { SEO } from '../components/seo'
 import { Title, Heading } from '../components/typography'
 import algoliasearch from 'algoliasearch/lite'
 import { Hits, Index, InstantSearch, SearchBox } from 'react-instantsearch-dom'
 import { CollaborationResult, GroupResult, NewsResult, PersonResult, ProjectResult } from '../components/search'
-
+import AlgoliaSVG from '../images/search-by-algolia.svg'
 const searchClient = algoliasearch('XU4L9VFUC9', 'a684a96c762d601cf1b43c9e5ec28029')
 
-const SearchPage = () => (
-  <Container>
-    <SEO title="404: Not found" />
+const StyledHits = styled(Hits)`
+  & ul {
+    list-style-type: none;
+    margin: 0;
+  }
+`
 
-    <Title>Search</Title>
+const SearchPage = () => {
+  return (
+    <Container>
+      <SEO title="404: Not found" />
 
-    <InstantSearch searchClient={ searchClient } indexName="NEWS">
-      <SearchBox />
+      <Title>Search</Title>
 
-      <Index indexName="PEOPLE">
-        <Heading>People</Heading>
-        <Hits hitComponent={ PersonResult } />
-      </Index>
+      <InstantSearch searchClient={ searchClient } indexName="NEWS">
+        <SearchBox />
+        <img src={ AlgoliaSVG } width="100px" />
 
-      <Index indexName="GROUPS">
-        <Heading>Groups</Heading>
-        <Hits hitComponent={ GroupResult } />
-      </Index>
+        <Section title="People">
+          <Index indexName="PEOPLE">
+            <StyledHits hitComponent={ PersonResult } />
+          </Index>
+        </Section>
 
-      <Index indexName="COLLABORATIONS">
-        <Heading>Collaborations</Heading>
-        <Hits hitComponent={ CollaborationResult }/>
-      </Index>
+        <Section title="Groups">
+          <Index indexName="GROUPS">
+            <StyledHits hitComponent={ GroupResult }/>
+          </Index>
+        </Section>
 
-      <Index indexName="PROJECTS">
-        <Heading>Projects</Heading>
-        <Hits hitComponent={ ProjectResult }/>
-      </Index>
+        <Section title="Collaborations">
+          <Index indexName="COLLABORATIONS">
+            <StyledHits hitComponent={ CollaborationResult }/>
+          </Index>
+        </Section>
 
-      <Index indexName="NEWS">
-        <Heading>News</Heading>
-        <Hits hitComponent={ NewsResult } />
-      </Index>
+        <Section title="Projects">
+          <Index indexName="PROJECTS">
+            <StyledHits hitComponent={ ProjectResult }/>
+          </Index>
+        </Section>
 
-      <Index indexName="NEWS">
-        <Heading>Blog</Heading>
-        <Hits hitComponent={ NewsResult } />
-      </Index>
+        <Section title="News">
+          <Index indexName="NEWS">
+            <StyledHits hitComponent={ NewsResult } />
+          </Index>
+        </Section>
 
-    </InstantSearch>
+        <Section title="Blog">
+          <Index indexName="NEWS">
+            <StyledHits hitComponent={ NewsResult } />
+          </Index>
+        </Section>
 
-  </Container>
-)
+      </InstantSearch>
+
+    </Container>
+  )
+}
 
 export default SearchPage

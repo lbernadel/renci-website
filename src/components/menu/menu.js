@@ -89,9 +89,11 @@ export const Menu = ({ items, dark }) => {
         ))
       }
       <ToolsMenu>
-        <IconButton>
-          <Icon icon="magnifying-glass" size={ 24 } fill={ theme.color.grey } />
-        </IconButton>
+        <MenuLink to="/search">
+          <IconButton>
+            <Icon icon="magnifying-glass" size={ 24 } fill={ theme.color.grey } />
+          </IconButton>
+        </MenuLink>
       </ToolsMenu>
     </Navigation>
   )
