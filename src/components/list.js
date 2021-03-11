@@ -22,8 +22,8 @@ export const List = ({ items, bullets = 'none', inline = false, ...props }) => {
     <Wrapper bullets={ bullets } inline={ inline }>
       {
         items.map((item, i) => (
-          <Fragment>
-            <ListItem key={ item.key }>{ item }</ListItem>
+          <Fragment key={ item.key }>
+            <ListItem>{ item }</ListItem>
             { inline && i + 1 < items.length && ', ' }
           </Fragment>
         ))
