@@ -89,10 +89,8 @@ export const Menu = ({ items, dark }) => {
         ))
       }
       <ToolsMenu>
-        <MenuLink to="/search">
-          <IconButton>
+        <MenuLink to="/search" partiallyActive={ true } activeClassName="active">
             <Icon icon="magnifying-glass" size={ 24 } fill={ theme.color.grey } />
-          </IconButton>
         </MenuLink>
       </ToolsMenu>
     </Navigation>
