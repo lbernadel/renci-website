@@ -65,6 +65,7 @@ export const Menu = ({ items, dark }) => {
     setTrayOpen(true)
     document.body.addEventListener('keydown', handleKeyDown)
   }
+  
   const handleCloseTray = () => {
     setTrayOpen(false)
     document.body.removeEventListener('keydown', handleKeyDown)
