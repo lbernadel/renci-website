@@ -193,7 +193,7 @@ export const CollaborationsNetwork = ({ height = 800, width = 750 }) => {
       }
     })
     setGraphData({ nodes: nodes, links: edges })
-  }, [createEdge, createNode, groups, collaborations])
+  }, [])
 
   useEffect(() => {
     const getNeighborhood = node => {
