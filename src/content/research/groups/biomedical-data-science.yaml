@@ -16,10 +16,9 @@ projects:
   - data-translator-standards-and-reference-implementations
   - cell-cycle
   - gene-screen
-  - nc-tracs
-  - nc-tracs-informatics-and-data-science
   - nc-genes
   - nc-nexus
+  - nc-tracs
   - obesity-hub
   - platform-for-analyzing-whole-brain-images
   - semantic-infrastructure-for-noctua-and-gene-ontology

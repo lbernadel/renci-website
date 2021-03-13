@@ -3,7 +3,16 @@ name: Chemotext2
 email: fake@email.com
 featuredImage: chemotext2.jpg
 description:  >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Chemotext mines scientific journals to identify new directions for biomedical research by surfacing potentially novel relationships between chemicals, biological systems, and diseases.
+renciRole: !markdown |
+  RENCI provides capabilities in knowledge networks and knowledgebases, text mining, machine learning, and ontologies to support Chemotext in collaboration with the UNC Eshelman School of Pharmacy. The project  draws from texts and abstracts in research journals to identify novel chemical-biological and entities-disease relationships, creating a valuable resource for drug discovery and development efforts. 
+members:
+  - id: chris-bizon
+  - id: steve-cox
+partners:
+  - unc-eii
+funding:
+  - unc
 www:
   url: 
   github: 

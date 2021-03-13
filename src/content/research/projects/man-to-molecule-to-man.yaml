@@ -2,7 +2,15 @@ id: man-to-molecule-to-man
 name: Man to Molecule to Man
 email: fake@email.com
 description:  >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Man to Molecule to Man leverages data from a wide array of sources to help researchers discover new uses for existing drugs.
+renciRole: !markdown |
+  Man to Molecule to Man, or M^3, seeks to identify novel drug uses through a pipeline that incorporates data on the relationships between drugs and their side effects (extracted from social media and various health forums), quantitative structure-activity relationship (QSAR) modeling data, and knowledge bases on chemical-biological and entity-disease relationships.  
+ 
+  The UNC Eshelman School of Pharmacy leads the project. RENCI focuses on text mining assistance and on building the cyberinfrastructure that will bridge queries across multiple knowledge sources.
+partners:
+  - unc-pharmacy
+funding:
+  - nih
 www:
   url: 
   github: 

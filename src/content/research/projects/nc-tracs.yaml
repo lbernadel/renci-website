@@ -1,8 +1,19 @@
 id: nc-tracs
 name: NC TraCS
 email: fake@email.com
-description: ADCIRC is a system of computer programs for solving time-dependent, free surface circulation and transport problems in two and three dimensions. These programs utilize the finite element method in space allowing the use of highly flexible, unstructured grids.
+description: >
+  The North Carolina Translational and Clinical Sciences (NC TraCS) Institute supports, funds, and connects the translational research community to improve the way biomedical research is conducted in North Carolina and across the country. 
+renciRole: !markdown |
+  RENCI supports the Informatics and Data Science component of NC TraCS: 
+  - Ashok Krishnamurthy and Stan Ahalt are Faculty Director and Associate Director of the Informatics and Data Science component.
+  - RENCI collaborates with NC TraCS in several projects, including Data Translator and ICEES+ COVID-19, 4CE and N3C.
+members:
+  - id: stan-ahalt
+  - id: ashok-krishnamurthy
+  - id: kimberly-robasky
+partners:
+  - nih-ctsa
+funding:
+  - unc-medicine
 www:
-  url: http://adcirc.org/
-  github: 
-  twitter:
+  url: https://tracs.unc.edu/

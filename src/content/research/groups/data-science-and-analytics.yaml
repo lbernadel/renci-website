@@ -16,6 +16,7 @@ members:
   - id: david-borland
   - id: jim-balhoff
 projects:
+  - aragorn
   - brain-i
   - cell-cycle
   - cellfie
@@ -24,6 +25,11 @@ projects:
   - ctmd
   - data-analysis-for-entrepreneurial-ecosystem
   - data-commons
+  - data-translator
+  - data-translator-aragorn
+  - data-translator-icees
+  - data-translator-robokop
+  - data-translator-standards-and-reference-implementations
   - dot-roadway-safety
   - evry-scope
   - family-planning-national-training-center
@@ -31,6 +37,7 @@ projects:
   - hydroshare
   - inca
   - man-to-molecule-to-man
+  - obesity-hub
   - percept
   - phyloreferencing
   - platform-for-analyzing-whole-brain-images

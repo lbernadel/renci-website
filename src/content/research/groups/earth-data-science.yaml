@@ -12,7 +12,7 @@ members:
 projects:
   - adcirc-lite-nc
   - adcirc-viz
-  - storm-surge-forecasting
+  - coastal-hazards-and-risks
   - coastal-probabilistic-hazard-analysis
   - coupling-flood-models
   - evacuation-modeling

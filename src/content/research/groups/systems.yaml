@@ -14,6 +14,7 @@ members:
   - id: michael-shoffner
   - id: hao-xu
 projects:
+  - brain-i
   - scidas
   - secure-research-space
 www:

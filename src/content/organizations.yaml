@@ -52,6 +52,9 @@
 - name: Davidson College
   id: davidson-college
   url: https://www.davidson.edu/
+- name: DecisionQ
+  id: decision-q
+  url: https://www.decisionq.com/
 - name: DDN
   id: ddn
   url: https://www.ddn.com/
@@ -67,14 +70,19 @@
 - name: Duke University Office of Information Technology
   id: duke-oit
   url: https://oit.duke.edu/
+- name: Duke University School of Medicine
+  id: duke-school-of-medicine
+  url: http://www.dukehealth.org/
 - name: Duke University Social Science Research Institute
   id: duke-ssri
   url: https://ssri.duke.edu/
+- name: Emory University School of Medicine
+  id: emory-university-medicine
+  url: http://med.emory.edu/
 - name: ESnet
   id: esnet
   url: https://www.es.net/
-- name: Federal Office of Population Affairs, U.S. Department of Health and Human
-    Services
+- name: Federal Office of Population Affairs, U.S. Department of Health and Human Services
   id: hhs-opa
   url: https://opa.hhs.gov/
 - name: FEMA
@@ -92,6 +100,9 @@
 - name: Harvard Medical School
   id: harvard-medical-school
   url: https://hms.harvard.edu/
+- name: Henry M. Jackson Foundation for the Advancement of Military Medicine
+  id: hjf
+  url: https://www.hjf.org/
 - name: IBM
   id: ibm
   url: https://www.ibm.com/
@@ -116,6 +127,9 @@
 - name: KU Leuven
   id: ku-leuven
   url: https://www.kuleuven.be/english
+- name: Lineberger Comprehensive Cancer Center
+  id: unc-lineberger
+  url: https://unclineberger.org/
 - name: Lawrence Berkeley National Laboratory
   id: lbnl
   url: https://www.lbl.gov/
@@ -140,12 +154,21 @@
 - name: National Institutes of Health
   id: nih
   url: https://www.nih.gov/
+- name: NIH Clinical and Translational Science Awards Program
+  id: nih-ctsa
+  ulr: https://ncats.nih.gov/ctsa
 - name: National Oceanic and Atmospheric Administration
   id: noaa
   url: https://www.noaa.gov/
+- name: National Oceanographic Partnership Program
+  id: nopp
+  url: https://www.nopp.org/
 - name: National Science Foundation
   id: nsf
   url: https://www.nsf.gov/
+- name: Naval Medical Research Center
+  id: nmrc
+  url: http://www.med.navy.mil/sites/nmrc/Pages/index.htm
 - name: NC Division of Emergency Management
   id: nc-division-of-emergency-management
   url: https://www.ncdps.gov/Index2.cfm?a=000003,000010
@@ -170,7 +193,7 @@
 - name: NIH National Human Genome Research Institute
   id: nih-nhgri
   url: https://www.genome.gov/
-- name: NIH National Institute of Health Environmental health Sciences
+- name: NIH National Institute of Health Environmental Health Sciences
   id: nih-niehs
   url: https://www.niehs.nih.gov/
 - name: NIH Office of Data Science Strategy
@@ -185,6 +208,9 @@
 - name: North Carolina State University Center for Geospatial Analytics
   id: ncsu-geospatial
   url: https://cnr.ncsu.edu/geospatial/
+- name: North Carolina Central University
+  id: nccu
+  url: https://www.nccu.edu/
 - name: Northwestern University
   id: northwestern-university
   url: https://www.northwestern.edu/
@@ -266,9 +292,18 @@
 - name: U.S. Department of Energy
   id: us-doe
   url: https://www.energy.gov/
+- name: Department of Homeland Security
+  id: us-dhs
+  url: https://www.dhs.gov/
 - name: U.S. Department of Health and Human Services
   id: us-dhhs
   url: https://www.hhs.gov/
+- name: U.S. Army Corps of Engineers
+  id: us-ace
+  path: https://www.usace.army.mil/
+- name: Uniformed Services University of the Health Sciences
+  id: usuhs
+  url: https://www.usuhs.edu/
 - name: Universidad San Francisco de Quito
   id: usfq
   url: https://www.usfq.edu.ec/
@@ -296,6 +331,9 @@
 - name: University of Florida
   id: university-of-florida
   url: http://www.ufl.edu/
+- name: University of Georgia
+  id: university-of-georgia
+  url: https://www.uga.edu/
 - name: University of Groningen
   id: university-of-groningen
   url: https://www.rug.nl/
@@ -311,9 +349,18 @@
 - name: University of North Carolina at Chapel Hill
   id: unc
   url: https://www.unc.edu/
+- name: University of North Carolina at Chapel Hill Adams School of Dentistry
+  id: unc-dentistry
+  url: https://www.unc.edu/school/dentistry/
 - name: University of North Carolina at Chapel Hill Center for Galapagos Studies
   id: unc-galapagos
   url: https://galapagos.unc.edu/
+- name: University of North Carolina at Chapel Hill Carolina Population Center
+  id: unc-cpc
+  url: https://www.cpc.unc.edu/
+- name: University of North Carolina at Chapel Hill College of Arts & Sciences
+  id: unc-college-of-arts-and-sciences
+  url: https://www.unc.edu/school/college-of-arts-sciences/
 - name: University of North Carolina at Chapel Hill Department of Biology
   id: unc-biology
   url: https://bio.unc.edu/
@@ -329,17 +376,28 @@
 - name: University of North Carolina at Chapel Hill Gillings School of Global Public Health
   id: unc-sph
   url: https://sph.unc.edu/
+- name: University of North Carolina at Chapel Hill Nutrition Research Institute
+  id: unc-nri
+  url: https://uncnri.org/
+- name: University of North Carolina at Chapel Hill School of Managementedicine
+  id: unc-medicine
+  url: https://galapagos.unc.edu/
+- name: University of North Carolina at Chapel Hill School of Nursing
+  id: unc-nursing
+  url: https://www.unc.edu/school/nursing/
 - name: University of North Carolina at Chapel Hill Hospitals
   id: unc-hospitals
   url: http://www.unchealthcare.org/site
 - name: University of North Carolina at Chapel Hill Institute for Marine Sciences
   id: unc-ims
   url: http://ims.unc.edu/
+- name: University of North Carolina at Chapel Hill Vice Chancellor of Research
+  id: unc-vcr
+  url: https://research.unc.edu/about/administration/
 - name: University of North Carolina at Chapel Hill Research Computing
   id: unc-its-research-computing
   url: https://its.unc.edu/research-computing/
-- name: University of North Carolina at Chapel Hill School of Information and
-    Library Science
+- name: University of North Carolina at Chapel Hill School of Information and Library Science
   id: unc-sils
   url: http://sils.unc.edu/
 - name: University of North Carolina Charlotte
@@ -351,6 +409,9 @@
 - name: University of North Carolina Eshelman School of Pharmacy
   id: unc-pharmacy
   url: https://pharmacy.unc.edu/
+- name: UNC Gordon-Larsen Lab
+  id: unc-gordon-larsen-lab
+  url: https://pennygordonlarsen.web.unc.edu/
 - name: University of North Carolina Greensboro
   id: unc-greensboro
   url: https://www.uncg.edu/
@@ -402,6 +463,9 @@
 - name: Virginia Polytechnic Institute and State University
   id: virginia-tech
   url: https://vt.edu/
+- name: Walter Reed National Military Medical Center
+  id: walter-reed
+  url: https://walterreed.tricare.mil/
 - name: Wellcome Sanger Institute
   id: wellcome-sanger-institute
   url: https://www.sanger.ac.uk/

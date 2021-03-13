@@ -13,6 +13,7 @@ members:
   - id: guarav-vaidya
   - id: laura-christopherson
 partners:
+  - johns-hopkins-university
   - lbnl
   - oregon-hsu
   - oregon-state-university
@@ -23,5 +24,3 @@ funding:
   - nih-nci
 www:
   url: https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh
-  github: 
-  twitter:

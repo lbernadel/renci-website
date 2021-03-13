@@ -7,8 +7,9 @@ renciRole: !markdown |
 email: an@email.com
 members:
   - id: stan-ahalt
-    role: Lead
+    role: Co-Lead
   - id: sarah-davis
+    role: Co-Lead
   - id: chris-erdmann
   - id: paul-kerr
   - id: patrick-patton

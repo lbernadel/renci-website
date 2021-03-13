@@ -14,9 +14,7 @@ members:
   - id: amanda-miller
   - id: stephanie-suber
 partners:
-  - odum-institute
   - nc-state-university
+  - odum-institute
 www:
   url: https:/datamatters.org/
-  github: null
-  twitter: null
