@@ -207,11 +207,10 @@ export const CollaborationsNetwork = ({ height = 800, width = 750 }) => {
     }
 
     setSelectedNodes(new Set())
-
     if (!selectedRootNode) return
     let neighborhood = getNeighborhood(selectedRootNode)
     setSelectedNodes(equalArrays(neighborhood, selectedNodes) ? new Set() : neighborhood)
-  }, [selectedRootNode, selectedNodes, indicentEdges])
+  }, [selectedRootNode])
 
   const edgeParticles = d => {
     switch (d.type) {
