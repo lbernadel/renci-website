@@ -1,6 +1,6 @@
 id: data-translator-robokop
 name: Data Translator ROBOKOP
-email: fake@email.com
+photo: data-translator-robokop.jpg
 description: >
   ROBOKOP (Reasoning Over Biomedical Objects linked in Knowledge-Oriented Pathways) is a reasoning tool that uses a knowledge graph to answer translational science questions such as “why does the use of common degreasers correlate with incidence of ulcerative colitis?”  Users pose questions as a graph query using a graphical interface, and results are returned from ROBOKOP’s 10 million node graph, ranked by their evidentiary support.
 renciRole: !markdown |
