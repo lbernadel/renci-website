@@ -1,6 +1,6 @@
 id: ccdh
 name: Center for Cancer Data Harmonization
-email: fake@email.com
+photo: ccdh.jpg
 description: >
   The Center for Cancer Data Harmonization (CCDH) aims to make the volumes of data arising from cancer research more accessible, organized, and powerful.
 renciRole: !markdown |

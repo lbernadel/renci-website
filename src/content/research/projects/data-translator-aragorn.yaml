@@ -1,5 +1,6 @@
 id: data-translator-aragorn
 name: Data Translator ARAGORN
+photo: data-translator-aragorn.jpg
 description: >
   Biological knowledge is increasingly standardized and made available through simple programming interfaces.  But how can scientists best consume that information, and use it to enhance their research?  ARAGORN (Autonomous Relay Agent for Generation of Ranked Networks) is a tool that knows how to assembles information relevant to a user query, and uses that information to synthesize well-supported answers.   ARAGORN is a component of the [link to: NCATS Data Translator], and is the evolution of the [link to: ROBOKOP] knowledge-graph– based question- answering system.
 renciRole: !markdown |
