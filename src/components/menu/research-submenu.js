@@ -22,7 +22,7 @@ const NavListItem = styled.li`
   margin: 5px 0;
 `
 
-export const ResearchSubmenu = () => {
+export const ResearchSubmenu = ({ onLinkClick }) => {
   const groups = useGroups()
   const collaborations = useCollaborations()
   const teams = useTeams()
@@ -33,19 +33,19 @@ export const ResearchSubmenu = () => {
         <Col xs={ 12 } md={ 4 } component={ NavColumn }>
           <NavHeading>Research Groups</NavHeading>
           <NavList style={{ listStyleType: 'none' }}>
-            { groups.map((group, i) => <NavListItem key={ group.id }><ArrowLink to={ group.fields.path } text={ group.name } /></NavListItem>) }
+            { groups.map((group, i) => <NavListItem onClick={ onLinkClick } key={ group.id }><ArrowLink to={ group.fields.path } text={ group.name } /></NavListItem>) }
           </NavList>
         </Col>
         <Col xs={ 12 } md={ 4 } component={ NavColumn }>
           <NavHeading>Collaborations</NavHeading>
           <NavList style={{ listStyleType: 'none' }}>
-            { collaborations.map((collaboration, i) => <NavListItem key={ collaboration.id }><ArrowLink to={ collaboration.fields.path } text={ collaboration.name } /></NavListItem>) }
+            { collaborations.map((collaboration, i) => <NavListItem onClick={ onLinkClick } key={ collaboration.id }><ArrowLink to={ collaboration.fields.path } text={ collaboration.name } /></NavListItem>) }
           </NavList>
         </Col>
         <Col xs={ 12 } md={ 4 } component={ NavColumn }>
           <NavHeading>Operations</NavHeading>
           <NavList style={{ listStyleType: 'none' }}>
-            { teams.map((team, i) => <NavListItem key={ team.id }><ArrowLink to={ team.fields.path } text={ team.name } /></NavListItem>) }
+            { teams.map((team, i) => <NavListItem onClick={ onLinkClick } key={ team.id }><ArrowLink to={ team.fields.path } text={ team.name } /></NavListItem>) }
           </NavList>
         </Col>
       </Row>

@@ -76,12 +76,13 @@ export const Menu = ({ items, dark }) => {
       {
         items.map((item, currentIndex) => item.submenu ? (
           <MenuItem key={ item.path }
-            onClick={ handleCloseTray }
             onMouseEnter={ handleOpenTray } onMouseLeave={ handleCloseTray }
             onFocus={ handleOpenTray } onBlur={ handleCloseTray }
           >
-            <MenuLink to={ item.path } dark={ dark } partiallyActive={ true } activeClassName="active">{ item.text }&nbsp;<Icon icon="chevron-down" size={ 16 } fill={ dark ? theme.color.white : theme.color.darkgrey } /></MenuLink>
-            { trayOpen && <Tray>{ React.createElement(item.submenu) }</Tray> }
+            <MenuLink to={ item.path } dark={ dark } partiallyActive={ true } activeClassName="active">
+              { item.text }&nbsp;<Icon icon="chevron-down" size={ 16 } fill={ dark ? theme.color.white : theme.color.darkgrey } />
+            </MenuLink>
+            { trayOpen && <Tray>{ React.createElement(item.submenu, { onLinkClick: handleCloseTray }) }</Tray> }
           </MenuItem>
         ) : (
           <MenuItem key={ item.path }>
