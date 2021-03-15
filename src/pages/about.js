@@ -33,8 +33,11 @@ const AboutPage = () => {
           </Paragraph>
         </Article>
 
-        <Article title={ `Our Collaborators (${ organizations.length })` }>
-          <OrganizationsList inline contributors={ organizations } />
+        <Article title={ `Collaboration` }>
+          <Paragraph>
+            RENCI projects are researched, developed, funded through collaborations with { organizations.length } organizations.
+            The force-directed graph below illustrates how research groups and projects are linked by their collaborating and funding organizations.
+          </Paragraph>
           <CollaborationsNetwork />
         </Article>
       </Section>
