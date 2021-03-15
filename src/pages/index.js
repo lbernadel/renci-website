@@ -46,6 +46,19 @@ const Overlay = styled.div`
   background: linear-gradient(to bottom, transparent, white);
 `
 
+const Tagline = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  font-size: 300%;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #222;
+  max-width: 1000px;
+  margin: auto;
+`
+
 const Visualization = () => {
   return (
     <VizWrapper>
@@ -56,6 +69,10 @@ const Visualization = () => {
       />
       <Overlay />
       <LearnMoreLink to="/home-viz"><Icon icon="question" size={ 16 } /> <span>Explore this graphic</span></LearnMoreLink>
+      <Tagline>
+        We do<br />
+        Data Science
+      </Tagline>
     </VizWrapper>
   )  
 }
