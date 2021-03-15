@@ -1,7 +1,6 @@
 id: panorama-360
 name: Panorama 360
 archived: false
-email: fake@email.com
 featuredImage: panorama-360.jpg
 description:  Panorama 360 uses cutting-edge computational science to improve scientific workflows. With machine learning algorithms and sophisticated analyses, Panorama 360 enables scientists to leverage a variety of end-to-end infrastructures to capture data and perform large-scale calculations in multiple operational modes while benefiting from rapid feedback on their experiments.
 renciRole: !markdown |

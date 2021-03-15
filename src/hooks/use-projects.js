@@ -6,7 +6,6 @@ const projectsQuery = graphql`{
       node {
         id
         name
-        email
         description
         www
         fields {

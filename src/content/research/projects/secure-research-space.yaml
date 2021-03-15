@@ -1,6 +1,5 @@
 id: secure-research-space
 name: Secure Research Space
-email: fake@email.com
 archived: true
 description: >
   The Carolina Data Warehouse for Health (CDW-H) houses clinical health records for all UNC Hospitals patients. These records are a valuable source of data for researchers. In addition to enabling access for legitimate healthcare and research purposes, the CDW-H must protect against loss of these records to ensure patient privacy and security.

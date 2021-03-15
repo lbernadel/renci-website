@@ -1,6 +1,5 @@
 id: brain-i
 name: BRAIN-I
-email: fake@email.com
 description:  >
   The BRAIN-I collaboration seeks to make high-resolution microscopy images of the brain easy to store, share, and analyze in support of neuroscience research.
 renciRole: !markdown |

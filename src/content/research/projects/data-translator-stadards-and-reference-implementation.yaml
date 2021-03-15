@@ -1,6 +1,5 @@
 id: data-translator-standards-and-reference-implementations
 name: Data Translator Standards and Reference Implementations
-email: fake@email.com
 description: >
   The NCATS Data Translator is based on integrating data from disparate sources, so that it can be used together to enhance human reasoning.  This lofty goal must rest on a solid foundation of standards;   in order to integrate data, the cross-institutional Translator team must coalesce around standards of data representation, message formats, API definitions, and change management.  The Standards and Reference Implementations (SRI) team helps guide the consortium members towards agreements on these standards.
 renciRole: >

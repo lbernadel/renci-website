@@ -88,7 +88,6 @@ export const projectQuery = graphql`
   query($id: String!) {
     projectsYaml( id: { eq: $id }) {
       name
-      email
       description
       renciRole
       featuredImage {

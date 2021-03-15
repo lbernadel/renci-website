@@ -1,6 +1,5 @@
 id: safe-superfacilities
 name: SAFE Superfacilities
-email: fake@email.com
 featuredImage: safe-superfacilities.jpg
 description:  Scientists are increasingly collaborating remotely via shared instruments, compute resources, and data repositories. SAFE superfacilities creates a framework to automate, authorize, and monitor end-to-end connectivity across "superfacilities" that integrate these resources through high-performance networks and data management.
 renciRole: !markdown |

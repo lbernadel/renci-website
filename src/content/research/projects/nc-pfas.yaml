@@ -1,6 +1,5 @@
 id: nc-pfas
 name: NC PFAS Testing Network Data Science Team
-email: ncpfastnetwork@unc.edu
 description: >
   RENCI co-leads the data science team for the North Carolina Per and Polyfluoroalkyl Substances Testing (PFAST) Network. The NC PFAST Network is an effort to establish a baseline assessment of PFOA contamination of public drinking water supplies in North Carolina, to better understand the environmental and health effects of these contaminants, and to evaluate PFOA remediation technologies. The data science team is charged with developing the means to manage and make publicly available project data.
 renciRole: !markdown |
@@ -12,7 +11,7 @@ members:
     role: Co-Lead
   - id: lisa-stillwell
     role: Co-Lead
-  - id: Patrick Patton
+  - id: patrick-patton
   - id: james-mcmanus
 partners:
   - ncsu-geospatial

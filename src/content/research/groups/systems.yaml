@@ -15,5 +15,6 @@ members:
   - id: hao-xu
 projects:
   - brain-i
+  - helx
   - scidas
   - secure-research-space

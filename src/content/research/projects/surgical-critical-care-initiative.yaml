@@ -1,6 +1,5 @@
 id: surgical-critical-care-initiative
 name: Surgical Critical Care Initiative
-email: fake@email.com
 description: >
   The Surgical Critical Care Initiative (SC2i) processes data from studies at world-class civilian and military research hospitals to create clinical decision-support tools that focus clinicians on the best choices for each patient.
 renciRole: !markdown |

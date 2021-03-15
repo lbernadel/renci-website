@@ -1,6 +1,5 @@
 id: rapid
 name: RAPID
-email: fake@email.com
 description: >
   This NSF-funded RAPID effort is a collaborative research project focused on building digital infrastructure and communities to assess drinking water hazards caused by hurricanes. The project will develop and host two workshops, one with relevant stakeholders from  Puerto Rico and one with relevant stakeholders from North Carolina. In addition to facilitating the North Carolina workshop, RENCI is providing expertise on cyberinfrastructure, data curation, and collaborative science.
 renciRole: !markdown |

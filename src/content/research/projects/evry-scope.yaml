@@ -1,6 +1,5 @@
 id: evry-scope
 name: EvryScope
-email: fake@email.com
 description:  >
   RENCI helps inform data collection, analysis, and storage solutions for the EvryScope, a telescope array designed to monitor the entire sky simultaneously.
 renciRole: !markdown |
