@@ -8,11 +8,7 @@ const projectsQuery = graphql`{
         name
         email
         description
-        www {
-          url
-          github
-          twitter
-        }
+        www
         fields {
           path
         }

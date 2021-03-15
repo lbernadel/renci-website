@@ -46,6 +46,6 @@ partners:
   - softiron
 funding:
 www:
-  url: https://www.irods.org
-  github: irods
-  twitter: iRODS
+  - https://www.irods.org
+  - https://github.com/irods
+  - https://twitter.com/iRODS

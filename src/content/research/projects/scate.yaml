@@ -17,6 +17,4 @@ partners:
 funding:
   - nsf
 www:
-  url: https://scate.phenoscape.org/
-  github: 
-  twitter:
+  - https://scate.phenoscape.org/

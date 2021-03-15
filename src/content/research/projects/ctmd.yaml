@@ -25,6 +25,4 @@ partners:
 funding:
   - us-dhhs
 www:
-  url: 
-  github: renci/ctmd
-  twitter: 
+  - https://github.com/renci/ctmd

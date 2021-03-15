@@ -39,6 +39,4 @@ partners:
 funding:
   - nhlbi
 www:
-  url: https://biodatacatalyst.nhlbi.nih.gov/
-  github: 
-  twitter: 
+  - https://biodatacatalyst.nhlbi.nih.gov/

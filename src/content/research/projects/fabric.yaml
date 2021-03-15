@@ -43,6 +43,6 @@ partners:
 funding:
   - nsf
 www:
-  url: https://www.fabric-testbed.net/
-  github: fabric-testbed
-  twitter: FABRICtestbed
+  - https://www.fabric-testbed.net/
+  - https://github.com/fabric-testbed
+  - https://twitter.com/FABRICtestbed

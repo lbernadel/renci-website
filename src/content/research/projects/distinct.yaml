@@ -1,6 +1,5 @@
 id: distinct
 name: DISTINCT
-email: fake@email.com
 featuredImage: distinct.jpg
 description: DISTINCT aims to improve the robustness and reliability of electric power systems by creating a distributed multi-loop networked system for wide-area control of large power grids.
 renciRole: !markdown |
@@ -13,7 +12,3 @@ partners:
   - university-of-south-florida
 funding:
   - nsf
-www:
-  url: 
-  github: 
-  twitter: 

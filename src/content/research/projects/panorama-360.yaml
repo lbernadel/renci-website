@@ -25,6 +25,4 @@ partners:
 funding:
   - us-doe
 www:
-  url: https://panorama360.github.io/
-  github: 
-  twitter: 
+  - https://panorama360.github.io/

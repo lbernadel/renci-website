@@ -20,6 +20,4 @@ funding:
   - lbnl
   - nih-nhgri
 www:
-  url: 
-  github: INCATools/dosdp-tools
-  twitter:
+  - https://github.com/INCATools/dosdp-tools

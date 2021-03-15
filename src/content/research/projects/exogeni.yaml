@@ -32,6 +32,5 @@ funding:
   - geni-project-office
   - nsf
 www:
-  url: http://www.exogeni.net/
-  github: 
-  twitter: 
+  - http://www.exogeni.net/
+

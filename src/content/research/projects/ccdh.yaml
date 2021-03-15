@@ -23,4 +23,4 @@ funding:
   - leidos-biomedical-research
   - nih-nci
 www:
-  url: https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh
+  - https://datascience.cancer.gov/data-commons/center-cancer-data-harmonization-ccdh

@@ -1,6 +1,6 @@
 id: data-translator
 name: Data Translator
-email: fake@email.com
+featuredImage: data-translator.jpg
 description: >
   The National Center for Advancing Translational Sciences (NCATS) launched the Biomedical Data Translator program in October 2016 in an effort to overcome data science challenges in biomedical research. The Data Translator project applies semantic integration strategies to share chemical, genetic, phenotypic, disease, ontological, and other knowledge sources to form a technology platform for translational science.  This knowledge is integrated together into a knowledge graph, which is then analyzed to produce novel insights and enhance human reasoning.
 renciRole: !markdown |
@@ -15,8 +15,7 @@ renciRole: !markdown |
   Translator uses ARAs to integrate information across KPs and reason over it to provide responsive answers, along with the evidence for those answers, as well as the provenance of the information used.  ARAGORN is a second-generation reasoner based on , that applies novel approaches to interpret user questions, assemble federated data, find suitable responses, and assemble those responses into high-level descriptions for a user. (link github repo)
 
   Finally, RENCI, along with OSU and LBLN, co-leads the Translator Standards and Reference Implementation group, which produces a suite of standards and products, a model for their governance, and processes to coordinate integration and shared implementation.   Examples of products include shared tools to coordinate the use of identifiers and ontologies, tools to aid teams in exposing data using Translator standards, and shared documentation outlining guidance on the Translator system.
-featuredImage: data-translator.jpg
 www:
-  url: https://researchsoftwareinstitute.github.io/data-translator/
-  github: https://github.com/researchsoftwareinstitute/greendatatranslator
-  twitter: 
+  - https://researchsoftwareinstitute.github.io/data-translator/
+  - https://github.com/researchsoftwareinstitute/greendatatranslator
+

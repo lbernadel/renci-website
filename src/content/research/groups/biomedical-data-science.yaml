@@ -21,10 +21,7 @@ projects:
   - nc-tracs
   - obesity-hub
   - platform-for-analyzing-whole-brain-images
+  - scate
   - semantic-infrastructure-for-noctua-and-gene-ontology
   - surgical-critical-care-initiative
   - unc-superfund-research-program
-  - scate
-www:
-  github: null
-  twitter: null

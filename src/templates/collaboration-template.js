@@ -73,7 +73,7 @@ export default ({ data, pageContext }) => {
     </Hero>
 
     <Container>
-      <SocialTray url={ www.url } twitter={ www.twitter } github={ www.github } />
+      <SocialTray urls={ www } />
 
       { sortedNews && <NewsSection news={ sortedNews } /> }
 
@@ -144,11 +144,7 @@ export const collaborationQuery = graphql`
       name
       description
       renciRole
-      www {
-        url
-        twitter
-        github
-      }
+      www
       members {
         id
         fullName

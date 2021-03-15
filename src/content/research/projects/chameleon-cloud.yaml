@@ -23,9 +23,7 @@ funding:
 featuredImage: chameleon-cloud.jpg
 email: 
 www:
-  url: https://www.chameleoncloud.org
-  github: chameleoncloud
-  twitter: https://twitter.com/ChameleonCloud
-  facebook: https://www.facebook.com/ChameleonCloud
-  linkedin: https://www.linkedin.com/company/chameleon-cloud/
-  youtube: https://www.youtube.com/user/ChameleonCloud
+  - https://www.chameleoncloud.org
+  - https://github.com/chameleoncloud
+  - https://twitter.com/ChameleonCloud
+  - https://www.facebook.com/ChameleonCloud

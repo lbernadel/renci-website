@@ -17,4 +17,4 @@ partners:
   - nc-state-university
   - odum-institute
 www:
-  url: https:/datamatters.org/
+  - https:/datamatters.org/

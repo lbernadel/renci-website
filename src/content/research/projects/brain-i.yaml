@@ -9,8 +9,3 @@ renciRole: !markdown |
   The computational analysis takes place on a RENCI Kubernetes cluster. Among the cluster nodes is a high performance computing system equipped with three Nvidia Tesla graphical processing units (GPUs), which greatly speeds up the time of data processing. The HeLx environment allows users to dynamically launch data science tools including image visualization workspaces. These workspaces run entirely in a browser while presenting the most advanced, hardware accelerated visualization systems. The BRAIN-I system takes the 3D microscopy images and replicates that data onto a server at RENCI that runs iRODS.
    
   Ultimately, the project will allow researchers to upload massive image files into the BRAIN-I system in order to view, share and analyze those images using Deep Learning methods, track and understand the origins of the data, and make the images and related analysis data discoverable to researchers at UNC and elsewhere.
-
-www:
-  url: http://adcirc.org/
-  github: 
-  twitter:

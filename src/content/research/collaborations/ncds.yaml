@@ -30,6 +30,5 @@ partners:
 funding:
   - nsf
 www:
-  url: https://www.datascienceconsortium.org/
-  github: ""
-  twitter: ncds
+  - https://www.datascienceconsortium.org/
+  - https://twitter.com/ncds

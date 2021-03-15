@@ -23,6 +23,6 @@ partners:
 funding:
   - ncats
 www:
-  url: https://researchsoftwareinstitute.github.io/data-translator/
-  github: https://github.com/researchsoftwareinstitute/greendatatranslator
-  twitter: 
+  - https://researchsoftwareinstitute.github.io/data-translator/
+  - https://github.com/researchsoftwareinstitute/greendatatranslator
+

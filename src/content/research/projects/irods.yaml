@@ -7,9 +7,9 @@ description: >
 renciRole: !markdown |
   iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS iRODS 
 www:
-  url: https://www.irods.org
-  github: null
-  twitter: null
+  - https://www.irods.org
+  - null
+  - null
 members:
   - id: jason-coposky
   - id: terrell-russell

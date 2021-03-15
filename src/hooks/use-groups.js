@@ -16,10 +16,6 @@ const groupsQuery = graphql`{
                     email
                     title
                 }
-                www {
-                    github
-                    twitter
-                }
                 projects {
                     id
                     name

@@ -16,6 +16,4 @@ members:
 partners:
   - nhlbi
 www:
-  url: https://biodatacatalyst.nhlbi.nihgov/fellows
-  github: null
-  twitter: null
+  - https://biodatacatalyst.nhlbi.nihgov/fellows
