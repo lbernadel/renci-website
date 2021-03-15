@@ -1,6 +1,6 @@
 id: platform-for-analyzing-whole-brain-images
 name: Platform for Analyzing Whole Brain Images
-photo: platform-for-analyzing-whole-brain-images.jpg
+featuredImage: platform-for-analyzing-whole-brain-images.jpg
 description: >
   By developing a scalable platform for exploring and analyzing whole brain tissue cleared images, RENCI is working to help researchers take advantage of advances in microscopy to study brain development and disease.
 renciRole: !markdown |

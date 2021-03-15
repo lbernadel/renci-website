@@ -1,6 +1,6 @@
 id: scate
 name: SCATE
-photo: scate.jpg
+featuredImage: scate.jpg
 description: >
   SCATE aims to help researchers study how biological traits evolve by enabling machine-actionable semantics for comparative analyses of trait evolution.
 renciRole: !markdown |
