@@ -1,6 +1,6 @@
 id: data-translator-icees
 name: Data Translator ICEES+ Knowledge Provider
-
+featuredImage: data-translator-icees.jpg
 description: >
   The ICEES+ Knowledge Provider is an initiative of the Biomedical Data Translator program that provides a regulatory-compliant framework for sharing linked clinical data and information on environmental exposures. ICEES is currently being used to support our driving use case on asthma and ask questions such as are there racial disparities in the impact of exposure to airborne pollutants on asthma?
 renciRole: !markdown |
