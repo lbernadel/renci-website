@@ -9,8 +9,10 @@ groups:
     - 
 projects:
     - irods
+    - hydroshare
 people:
     - terrell-russell
+    - arcot-rajasekar
 teams: 
     - 
 collaborations:
@@ -18,7 +20,8 @@ collaborations:
 organizations:
     - unc-sils
 tags:
-    - 
+    - data-management
+    - training
 ---
 
 ![Teacher and students discuss an issue with their team project.](https://renci.org/wp-content/uploads/2018/08/cyber-carpentry-01.jpg)
