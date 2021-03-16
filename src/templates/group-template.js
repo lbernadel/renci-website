@@ -41,7 +41,7 @@ export default ({ data, pageContext }) => {
         {
           news && (
             <Section title="News">
-              <NewsList articles={ news } />
+              <NewsList articles={ news.slice(0, 2) } />
             </Section>
           )
         }
