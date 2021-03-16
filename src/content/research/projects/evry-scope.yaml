@@ -1,5 +1,6 @@
 id: evry-scope
 name: EvryScope
+featuredImage: every-scope.jpg
 description:  >
   RENCI helps inform data collection, analysis, and storage solutions for the EvryScope, a telescope array designed to monitor the entire sky simultaneously.
 renciRole: !markdown |

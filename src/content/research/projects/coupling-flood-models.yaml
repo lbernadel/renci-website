@@ -1,5 +1,6 @@
 id: coupling-flood-models
 name: Coupling Flood Models
+featuredImage: coupling-flood-models.jpg
 description: >
   RENCI experts are developing new ways to connect riverine hydraulic models to the coastal storm surge model ADCIRC to better simulate and predict interactions between riverine flooding and coastal storm surge.
 renciRole: !markdown |

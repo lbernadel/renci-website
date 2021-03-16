@@ -1,5 +1,6 @@
 id: coastal-hazards-and-risks
 name: Coastal Hazards and Risks
+featuredImage: coastal-hazards-and-risks.jpg
 description: >
   RENCI develops systems to support fundamental research, engineering design, and hazard assessments related to coastal hazards such as storm surge using the ADCIRC storm surge model.
 renciRole: !markdown |
