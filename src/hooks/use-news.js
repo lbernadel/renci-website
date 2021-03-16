@@ -109,10 +109,16 @@ const newsQuery = graphql`{
       }
     }
   }
+  spotlightIDs: allNewsSpotlightYaml {
+    nodes {
+      id
+    }
+  }
 }`
 
 export const useNews = () => {
   const news = useStaticQuery(newsQuery)
+  const spotlightIDs = news.spotlightIDs.nodes.map(node => node.id)
 
   const features = news.features.edges.map(({ node }) => {
     // read date from the file path, and set client route
@@ -139,7 +145,9 @@ export const useNews = () => {
   const articles = [...features, ...blog]
     .sort((a, b) => new Date(b.frontmatter.publishDate) - new Date(a.frontmatter.publishDate))
 
-  return articles
+  const spotlight = articles.filter(article => spotlightIDs.includes(article.frontmatter.slug))
+
+  return { articles, spotlight }
 }
 
 export const useNewsSpotlight = () => {

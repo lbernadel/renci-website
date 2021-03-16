@@ -4,8 +4,8 @@ import { SEO } from '../components/seo'
 import { Link } from 'gatsby'
 import { Container, Section } from '../components/layout'
 import { Paragraph } from '../components/typography'
-import { useNewsSpotlight } from '../hooks'
-import { Spotlight } from '../components/news'
+import { useNews } from '../hooks'
+import { NewsList } from '../components/news'
 import HomeGraphic from '../images/home-graphic.png'
 import { Icon } from '../components/icon'
 
@@ -78,7 +78,7 @@ const Visualization = () => {
 }
 
 const IndexPage = () => {
-  const article = useNewsSpotlight()[0]
+  const { spotlight }= useNews()
 
   return (
     <Fragment>
@@ -88,7 +88,7 @@ const IndexPage = () => {
 
       <Container>
         <Section title="News Spotlight" fullWidth>
-          <Spotlight key={ article.id } article={ article } />
+          <NewsList articles={ spotlight } />
         </Section>
 
         <Section title="Sit amet, consectetur">

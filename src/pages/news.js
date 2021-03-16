@@ -5,7 +5,7 @@ import { navigate, useLocation } from '@reach/router'
 import { Container, Section, HorizontalRule } from '../components/layout'
 import { Title } from '../components/typography'
 import { useNews, useWindow } from '../hooks'
-import { ArticlePreview, NewsFilterForm, PaginationTray, NewsContext } from '../components/news'
+import { NewsFilterForm, PaginationTray, NewsContext, NewsList } from '../components/news'
 import { LoadingIndicator } from '../components/loading-indicator'
 
 // constants
@@ -50,7 +50,7 @@ const filtersUrl = (params, basePath = '/news') => {
 const NewsPage = () => {
   const location = useLocation()
   const { windowWidth } = useWindow()
-  const articles = useNews() // all articles
+  const { articles } = useNews() // all articles
   const [filters, setFilters] = useState(INITIAL_FILTERS)
   const [filteredArticles, setFilteredArticles] = useState(articles)
   const [news, setNews] = useState([]) // articles to render
@@ -145,13 +145,7 @@ const NewsPage = () => {
           ) : (
           <Fragment>
             <Section title={ `${ filteredArticles.length } News Item${ filteredArticles.length === 1 ? '' : 's' }` }>
-              { news.map((article, i) => (
-                  <Fragment key={ article.id }>
-                    <ArticlePreview article={ article } path={ article.fields.path } />
-                    { i < articles.length - 1 && <HorizontalRule /> }
-                  </Fragment>
-                ))
-              }
+              <NewsList articles={ news } />
             </Section>
             { pageCount > 0 && <PaginationTray /> }
           </Fragment>

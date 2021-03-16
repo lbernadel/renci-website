@@ -4,37 +4,10 @@ import { graphql } from 'gatsby'
 import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
 import { Title } from '../components/typography'
 import { SocialTray } from '../components/social-tray'
-import { ArticlePreview } from '../components/news'
+import { NewsList } from '../components/news'
 import { PeopleList } from '../components/people'
 import { OrganizationsList } from '../components/organizations'
 import { Link } from '../components/link'
-
-const NewsSection = ({ news, maxLength }) => {
-  return (
-    <Section title="News">
-      {
-        news.slice(0, maxLength).map((article, i) => {
-          return (
-            <Fragment key={ article.id }>
-              <ArticlePreview article={ article } path={ article.fields.path } />
-              { i < Math.min(news.length, maxLength) - 1 && <HorizontalRule /> }
-            </Fragment>
-          )
-        })
-      }
-    </Section>
-  )
-}
-
-NewsSection.propTypes = {
-  maxLength: PropTypes.number.isRequired,
-}
-
-NewsSection.defaultProps = {
-  maxLength: 2,
-}
-
-//
 
 export default ({ data, pageContext }) => {
   const { projectsYaml: {
@@ -65,7 +38,13 @@ export default ({ data, pageContext }) => {
       <Container>
         <SocialTray urls={ www } />
         
-        { sortedNews && <NewsSection news={ sortedNews } /> }
+        {
+          sortedNews && (
+            <Section title="News">
+              <NewsList articles={ news.slice(0, 2) } />
+            </Section>
+          )
+        }
 
         <Section title="RENCI's Role">
           <Article>

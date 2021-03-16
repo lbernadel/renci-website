@@ -66,14 +66,7 @@ export const Profile = ({ name, title, email, www, photo, phone }) => {
                 <Detail>{ phone }</Detail>
             </Details>
             <Footer>
-                <SocialTray
-                    url={ www.url }
-                    twitter={ www.twitter }
-                    github={ www.github }
-                    instagram={ www.instagram }
-                    linkedin={ www.linkedin }
-                    youtube={ www.youtube }
-                />                
+                <SocialTray urls={ www } />                
             </Footer>
         </Wrapper>
     )

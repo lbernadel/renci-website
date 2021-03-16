@@ -78,10 +78,10 @@ export const ArticlePreview = ({ article, path, compact = false }) => {
                 &nbsp;&nbsp;
                 <Label className={ article.fields.newsType }>{ article.fields.newsType }</Label>
               </div>
-              <Subheading className="title"><Link to={ path }>{ article.frontmatter.title }</Link></Subheading>
+              <Subheading className="title"><Link to={ article.fields.path }>{ article.frontmatter.title }</Link></Subheading>
             </TitleContainer>
             <BodyContainer dangerouslySetInnerHTML={{ __html: article.excerpt }} />
-            <ArrowLink to={ path } text="Continue Reading" float="right" />
+            <ArrowLink to={ article.fields.path } text="Continue Reading" float="right" />
           </Col>
         </Row>
       </Grid>

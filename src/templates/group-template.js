@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import { graphql } from 'gatsby'
 import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
 import { Title, Paragraph } from '../components/typography'
-import { ArticlePreview } from '../components/news'
+import { NewsList } from '../components/news'
 import { ArrowLink } from '../components/link'
 import { List } from '../components/list'
 import { PeopleList } from '../components/people'
@@ -41,16 +41,7 @@ export default ({ data, pageContext }) => {
         {
           news && (
             <Section title="News">
-              {
-                news.slice(0, 2).map((article, i) => {
-                  return (
-                    <Fragment key={ article.id }>
-                      <ArticlePreview article={ article } path={ article.fields.path } compact />
-                      { i < 1 && <HorizontalRule /> }
-                    </Fragment>
-                  )
-                })
-              }
+              <NewsList articles={ news } />
             </Section>
           )
         }
@@ -183,6 +174,13 @@ export const groupQuery = graphql`
                           ...GatsbyImageSharpFixed
                       }
                   }
+              }
+              previewImage {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
           }
           excerpt(pruneLength: 500)

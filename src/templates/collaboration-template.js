@@ -4,51 +4,24 @@ import { graphql } from 'gatsby'
 import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
 import { Title, Paragraph } from '../components/typography'
 import { SocialTray } from '../components/social-tray'
-import { ArticlePreview } from '../components/news'
+import { NewsList } from '../components/news'
 import { ArrowLink } from '../components/link'
 import { PeopleList } from '../components/people'
 import { OrganizationsList } from '../components/organizations'
 import { List } from '../components/list'
 
-const NewsSection = ({ news, maxLength }) => {
-  return (
-    <Section title="News">
-      {
-        news.slice(0, maxLength).map((article, i) => {
-          return (
-            <Fragment key={ article.id }>
-              <ArticlePreview article={ article } path={ article.fields.path } />
-              { i < Math.min(news.length, maxLength) - 1 && <HorizontalRule /> }
-            </Fragment>
-          )
-        })
-      }
-    </Section>
-  )
-}
-
-NewsSection.propTypes = {
-  maxLength: PropTypes.number.isRequired,
-}
-
-NewsSection.defaultProps = {
-  maxLength: 2,
-}
-
-//
-
 export default ({ data, pageContext }) => {
   const { collaborationsYaml: {
-  name,
-  description,
-  renciRole,
-  members,
-  www,
-  projects,
-  featuredImage,
-  partners,
-  funding,
-  news,
+    name,
+    description,
+    renciRole,
+    members,
+    www,
+    projects,
+    featuredImage,
+    partners,
+    funding,
+    news,
   }} = data
 
   const [currentProjects, setCurrentProjects] = useState([])
@@ -75,7 +48,13 @@ export default ({ data, pageContext }) => {
     <Container>
       <SocialTray urls={ www } />
 
-      { sortedNews && <NewsSection news={ sortedNews } /> }
+      {
+        sortedNews && (
+          <Section title="News">
+            <NewsList articles={ news.slice(0, 2) } />
+          </Section>
+        )
+      }
 
       {
         <Section title="RENCI's Role">
@@ -87,18 +66,18 @@ export default ({ data, pageContext }) => {
         projects && (
           <Section title="Projects">
             {
-            currentProjects.length > 0 && (
-              <Article>
-                <List items={ currentProjects.map(project => <ArrowLink key={ project.id } to={ project.fields.path } text={ project.name } />) } />
-              </Article>
-            )
+              currentProjects.length > 0 && (
+                <Article>
+                  <List items={ currentProjects.map(project => <ArrowLink key={ project.id } to={ project.fields.path } text={ project.name } />) } />
+                </Article>
+              )
             }
             {
-            pastProjects.length > 0 && (
-              <Article title="Past Projects">
-                <List items={ pastProjects.map(project => <ArrowLink key={ project.id } to={ project.fields.path } text={ project.name } />) } />
-              </Article>
-            )
+              pastProjects.length > 0 && (
+                <Article title="Past Projects">
+                  <List items={ pastProjects.map(project => <ArrowLink key={ project.id } to={ project.fields.path } text={ project.name } />) } />
+                </Article>
+              )
             }
           </Section>
         )
