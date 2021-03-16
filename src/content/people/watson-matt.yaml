@@ -5,10 +5,6 @@ name:
 email: mwatson@renci.org
 title: Web Architect
 phone: 919-445-4715
-www:
-  twitter: null
-  github: mbwatson
-  instagram: null
-  linkedin: null
-  youtube: null
 bio: 
+www:
+  - https://github.com/mbwatson

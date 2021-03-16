@@ -69,13 +69,7 @@ export const personQuery = graphql`
           }
         }
       }
-      www {
-        twitter
-        github
-        instagram
-        linkedin
-        youtube
-      }
+      www
       bio
       teams {
         id
