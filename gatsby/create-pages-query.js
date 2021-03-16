@@ -94,22 +94,5 @@ module.exports = `
         }
       }
     }
-    events: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/content\/events/"}},
-      sort: {fields: frontmatter___dates___start, order: ASC}
-    ) {
-      edges {
-        node {
-          fileAbsolutePath
-          frontmatter {
-            slug
-            title
-          }
-          fields {
-            path
-          }
-        }
-      }
-    }
   }
 `

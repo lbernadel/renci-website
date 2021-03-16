@@ -42,7 +42,6 @@ module.exports = {
     { resolve: `gatsby-source-filesystem`, options: { name: `collaborations`, path: `${ __dirname }/src/content/research/collaborations` } },
     { resolve: `gatsby-source-filesystem`, options: { name: `news`, path: `${ __dirname }/src/content/news/features` } },
     { resolve: `gatsby-source-filesystem`, options: { name: `blog`, path: `${ __dirname }/src/content/news/blog` } },
-    { resolve: `gatsby-source-filesystem`, options: { name: `events`, path: `${ __dirname }/src/content/events` } },
     { resolve: `gatsby-source-filesystem`, options: { name: `careers`, path: `${ __dirname }/src/content/careers` } },
     {
       resolve: `gatsby-transformer-remark`,

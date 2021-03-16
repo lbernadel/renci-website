@@ -226,9 +226,6 @@ exports.createPages = async ({ actions, graphql }) => {
   const projectTemplate = path.resolve(`src/templates/project-template.js`)
   const collaborationTemplate = path.resolve(`src/templates/collaboration-template.js`)
   const newsArticleTemplate = path.resolve(`src/templates/news-article-template.js`)
-  const eventTemplate = path.resolve(`src/templates/event-template.js`)
-  const eventsFutureTemplate = path.resolve(`src/templates/events-future-template.js`)
-  const eventsPastTemplate = path.resolve(`src/templates/events-past-template.js`)
 
   return await graphql(createPagesQuery).then(result => {
     if (result.errors) {
@@ -359,49 +356,6 @@ exports.createPages = async ({ actions, graphql }) => {
     }
     blogArticles.forEach(createBlogArticlePage)
 
-    // Create event pages
-    const events = result.data.events.edges
-    console.log(`\nCreating event pages...`)
-    const createEventPage = ({ node }, index) => {
-      const matches = node.fileAbsolutePath.match(/content\/events\/(\d{4}\/\d{2})\/.+.md$/)
-      if (matches) {
-        const [, yyyydd] = matches
-        const path = `/events/${ yyyydd }/${ node.frontmatter.slug }`
-        console.log(` - ${ node.frontmatter.title } (${ path })`)
-        createPage({
-          path: path,
-          component: eventTemplate,
-          context: { // additional data passed via context
-            slug: node.frontmatter.slug,
-            prev: index === 0 ? null : events[index - 1].node,
-            next: index === events.length - 1 ? null : events[index + 1].node,
-          },
-        })
-      }
-    }
-    events.forEach(createEventPage)
-
-    // Create events pages
-    console.log(`\nCreating events list pages...`)
-
-    console.log(` - Future events (/events)`)
-    createPage({
-      path: '/events',
-      component: eventsFutureTemplate,
-      context: {
-        todaysDate: dateString,
-      },
-    })
-    
-    console.log(` - Past events (/events/archive)`)
-    createPage({
-      path: '/events/archive',
-      component: eventsPastTemplate,
-      context: {
-        todaysDate: dateString,
-      },
-    })
-
     return [
       ...people,
       ...groups,
@@ -410,7 +364,6 @@ exports.createPages = async ({ actions, graphql }) => {
       ...collaborations,
       ...newsArticles,
       ...blogArticles,
-      ...events,
     ]
   })
 }
