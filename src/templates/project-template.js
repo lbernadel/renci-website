@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
 import { Title } from '../components/typography'
-import { SocialTray } from '../components/social-tray'
+import { LinkTray } from '../components/link'
 import { NewsList } from '../components/news'
 import { PeopleList } from '../components/people'
 import { OrganizationsList } from '../components/organizations'
@@ -36,7 +36,7 @@ export default ({ data, pageContext }) => {
       </Hero>
 
       <Container>
-        <SocialTray urls={ www } />
+        <LinkTray urls={ www } />
         
         {
           sortedNews && (
