@@ -16,5 +16,6 @@ members:
 projects:
   - brain-i
   - helx
+  - evry-scope
   - scidas
   - secure-research-space
