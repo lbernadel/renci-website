@@ -102,7 +102,7 @@ export default ({ data, pageContext }) => {
                       .sort((a, b) => a.name.last < b.name.last ? -1 : 1)
                       .map((a, i) => (
                         <Fragment key={ `author-${ i }`}>
-                          <Link to={ `/people/${ a.id }` }>{ a.fullName }</Link>{ i + 1 < author.length ? ', ' : '.' }
+                          <Link to={ `/people/${ a.id }` }>{ a.fullName }</Link>{ i + 1 < author.length ? ', ' : '' }
                         </Fragment>
                       ))
                   }
