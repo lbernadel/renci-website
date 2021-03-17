@@ -242,7 +242,7 @@ export const CollaborationsNetwork = ({ height = 500, width = 1000 }) => {
             linkLineDash={ e => e.type === 'partner' ? [2, 2] : [1,0] }
             enableZoomPanInteraction={ true }
             enablePointerInteraction={ true }
-            zoomToFit={ (1000, 50) }
+            zoomToFit={ () => (1000, 50) }
           />
         )
       }
