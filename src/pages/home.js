@@ -34,7 +34,7 @@ const VizWrapper = styled.div(({ theme }) => `
   backgroundColor: transparent;
   position: relative;
   margin-top: -1rem;
-  margin-bottom: -12rem;
+  margin-bottom: -15rem;
   &:hover ${ LearnMoreLink } {
     filter: opacity(0.75);
   }
@@ -61,6 +61,7 @@ const Tagline = styled.div`
   color: #222;
   max-width: 1000px;
   margin: auto;
+  pointer-events: none;
 `
 
 const Visualization = () => {

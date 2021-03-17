@@ -23,7 +23,7 @@ const Wrapper = styled.div(({ theme }) => `
   }
 `)
 
-export const CollaborationsNetwork = ({ height = 600, width = 1000 }) => {
+export const CollaborationsNetwork = ({ height = 500, width = 1000 }) => {
   const theme = useTheme()
   const data = useStaticQuery(collaborationsQuery)
   const [graphData, setGraphData] = useState({ nodes: [], edges: [] })
@@ -240,8 +240,8 @@ export const CollaborationsNetwork = ({ height = 600, width = 1000 }) => {
             linkDirectionalParticleSpeed={ fundingParticles ? edgeParticlesSpeed : null }
             linkDirectionalParticleColor={ e => fundingParticles && edgeStyles[e.type].particle.color }
             linkLineDash={ e => e.type === 'partner' ? [2, 2] : [1,0] }
-            enableZoomPanInteraction={ false }
-            enablePointerInteraction={ false }
+            enableZoomPanInteraction={ true }
+            enablePointerInteraction={ true }
             zoomToFit={ (1000, 50) }
           />
         )
