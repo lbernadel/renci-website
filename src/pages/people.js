@@ -34,14 +34,6 @@ const PeoplePage = () => {
         <StaffList staff={ ood } />
       </Section>
 
-      <Section title="Management Team" fullWidth>
-        <StaffList staff={ management } />
-      </Section>
-
-      <Section title="Chief Scientists" fullWidth>
-        <StaffList staff={ chiefScientists } />
-      </Section>
-
       <Section title="All Staff" fullWidth>
         <StaffList staff={ staff } nav />
       </Section>
