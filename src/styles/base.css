@@ -314,7 +314,10 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 2;
+
 }
 figure {
   margin-left: 0;
