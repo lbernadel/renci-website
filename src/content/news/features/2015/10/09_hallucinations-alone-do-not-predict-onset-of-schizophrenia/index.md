@@ -16,11 +16,11 @@ teams:
 collaborations:
     - 
 tags:
-    - 
+    - team-science
 ---
-<em>An analysis of psychological symptoms aims to refine diagnostic criteria for teens at high risk of developing the brain disorder that affects millions of people worldwide.</em>
+_An analysis of psychological symptoms aims to refine diagnostic criteria for teens at high risk of developing the brain disorder that affects millions of people worldwide._
 
-CHAPEL HILL, NC – Despite decades of study, schizophrenia has remained stubbornly difficult to diagnose in its earliest, prodromal stage. A new analysis led by researchers at the UNC School of Medicine and Renaissance Computing Institute identifies illogical thoughts as most predictive of schizophrenia risk. Surprisingly, perceptual disturbances, the forerunners of hallucinations, are not predictive, even though full-blown hallucinations are common features of schizophrenia. The results were published online today in the journal <em>Schizophrenia Research</em>. 
+CHAPEL HILL, NC – Despite decades of study, schizophrenia has remained stubbornly difficult to diagnose in its earliest, prodromal stage. A new analysis led by researchers at the UNC School of Medicine and Renaissance Computing Institute identifies illogical thoughts as most predictive of schizophrenia risk. Surprisingly, perceptual disturbances, the forerunners of hallucinations, are not predictive, even though full-blown hallucinations are common features of schizophrenia. The results were published online today in the journal _Schizophrenia Research_.
 
 "The earlier people are identified and receive treatment when they develop schizophrenia, the better their prognosis," said Diana Perkins, MD, a clinician and professor of psychiatry at the UNC School of Medicine and one of the study's first authors. "If we can identify persons at high risk for psychosis we can then develop interventions to prevent the development of schizophrenia and the functional declines associated with it."
 
@@ -38,6 +38,6 @@ Somewhat surprisingly, perceptual disturbances – for examples, seeing shadows,
 
 "In terms of assessing psychosis risk, I think this study shows we need to be emphasizing the person's thought process, and appreciate that perceptual disturbances may not be a specific early warning sign," Perkins said. "I think that will affect how we develop our diagnostic system in the future for people who are at high risk for psychosis."
 
-<em>The National Institutes of Mental Health funded this research.</em>
+_The National Institutes of Mental Health funded this research._
 
-<em>Additional study coauthors include Barbara Cornblatt of the Zucker Hillside Hospital, Scott Woods, Tyrone Cannon and Thomas McGlashan of Yale University, Jean Addington of The University of Calgary, Carrie Bearden of the University of California, Los Angeles, Kristin Cadenhead and Ming Tsuang of the University of California, San Diego, Robert Heinssen of the National Institute of Mental Health, Daniel Mathalon of the University of California, San Francisco, Larry Seidman of Harvard Medical School.</em>
+_Additional study coauthors include Barbara Cornblatt of the Zucker Hillside Hospital, Scott Woods, Tyrone Cannon and Thomas McGlashan of Yale University, Jean Addington of The University of Calgary, Carrie Bearden of the University of California, Los Angeles, Kristin Cadenhead and Ming Tsuang of the University of California, San Diego, Robert Heinssen of the National Institute of Mental Health, Daniel Mathalon of the University of California, San Francisco, Larry Seidman of Harvard Medical School._
