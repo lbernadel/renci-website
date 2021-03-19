@@ -6,7 +6,6 @@ import { Container, Section } from '../components/layout'
 import { Paragraph } from '../components/typography'
 import { useNews } from '../hooks'
 import { NewsList } from '../components/news'
-import HomeGraphic from '../images/home-graphic.png'
 import { Icon } from '../components/icon'
 import { CollaborationsNetwork } from '../components/viz'
 

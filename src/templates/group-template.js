@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { graphql } from 'gatsby'
-import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
+import { Container, Article, Section, Hero } from '../components/layout'
 import { Title, Paragraph } from '../components/typography'
 import { NewsList } from '../components/news'
 import { ArrowLink } from '../components/link'

@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { Container, Article, Section, Hero, HorizontalRule } from '../components/layout'
+import { Container, Article, Section, Hero } from '../components/layout'
 import { Title } from '../components/typography'
 import { LinkTray } from '../components/link'
 import { NewsList } from '../components/news'

@@ -6,7 +6,7 @@ import { Title } from '../components/typography'
 import { StaffList } from '../components/people'
 
 const PeoplePage = () => {
-  const { staff, ood, management, chiefScientists } = usePeople()
+  const { staff, ood } = usePeople()
 
   useEffect(() => {
     const handleKeyDown = event => {

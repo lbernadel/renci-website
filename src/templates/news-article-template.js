@@ -34,7 +34,7 @@ export default ({ data, pageContext }) => {
   const { article: {
     frontmatter: {
       title, subtitle, publishDate, author, featuredImage,
-      people, groups, projects, teams, collaborations, organizations, tags
+      people, groups, projects, teams, collaborations, tags
     },
     fields,
     html: articleHTML
@@ -44,7 +44,6 @@ export default ({ data, pageContext }) => {
   const articleTags = groups
     .concat(collaborations)
     .concat(projects)
-    // .concat(organizations)
     .concat(teams)
     .concat(people)
     // remove null items
@@ -52,15 +51,15 @@ export default ({ data, pageContext }) => {
     // turn into array of objects with shape { id, name, path }
     .map(item => {
       switch (item.__typename) {
-        // case 'GroupsYaml':
-        // case 'CollaborationsYaml':
-        //   return ({ id: item.id, name: item.name, path: filtersUrl({ group: item.id }) })
-        // case 'ProjectsYaml':
-        //   return ({ id: item.id, name: item.name, path: filtersUrl({ project: item.id }) })
+        case 'GroupsYaml':
+        case 'CollaborationsYaml':
+          return ({ id: item.id, name: item.name, path: filtersUrl({ group: item.id }) })
+        case 'ProjectsYaml':
+          return ({ id: item.id, name: item.name, path: filtersUrl({ project: item.id }) })
         case 'PeopleYaml':
           return ({ id: item.id, name: item.fullName, path: item.fields.path })
-        case 'OrganizationsYaml':
-          return ({ id: item.id, name: item.name, path: item.url })
+        // case 'OrganizationsYaml':
+        //   return ({ id: item.id, name: item.name, path: item.url })
         default:
           return ({ id: item.id, name: item.name, path: item.fields.path })
       }
@@ -209,12 +208,6 @@ export const newsQuery = graphql`
           fields {
             path
           }
-        }
-        organizations {
-          id
-          __typename
-          name
-          url
         }
         tags {
           id

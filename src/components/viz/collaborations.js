@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Button } from '../buttons'
 import loadable from '@loadable/component'
 
 const ForceGraph2D = loadable(() => import('./force-graph'))
@@ -31,7 +30,6 @@ export const CollaborationsNetwork = ({ height = 500, width = 1000 }) => {
   const collaborations = data.collaborations.edges.map(({ node }) => node)
   const [selectedNodes, setSelectedNodes] = useState(new Set())
   const [selectedRootNode, setSelectedRootNode] = useState(null)
-  const [fundingParticles, setFundingParticles] = useState(false)
 
   const nodeStyles = {
     person: {
@@ -236,9 +234,7 @@ export const CollaborationsNetwork = ({ height = 500, width = 1000 }) => {
             onNodeClick={ handleNodeClick }
             nodeCanvasObjectMode={ node => selectedRootNode === node ? 'before' : undefined }
             nodeCanvasObject={ nodeHighlight }
-            linkDirectionalParticles={ fundingParticles ? edgeParticles : null }
-            linkDirectionalParticleSpeed={ fundingParticles ? edgeParticlesSpeed : null }
-            linkDirectionalParticleColor={ e => fundingParticles && edgeStyles[e.type].particle.color }
+            linkDirectionalParticleColor={ e => edgeStyles[e.type].particle.color }
             linkLineDash={ e => e.type === 'partner' ? [2, 2] : [1,0] }
             enableZoomPanInteraction={ true }
             enablePointerInteraction={ true }
