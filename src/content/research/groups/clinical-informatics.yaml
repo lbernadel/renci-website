@@ -2,7 +2,7 @@ id: clinical-informatics
 name: Clinical Informatics
 description: >
   RENCI leverages systems and technologies to fight disease and improve health. Our expert teams lead cross-cutting efforts to advance fundamental research and support meaningful improvements in clinical practice.  
-featuredImage: biomedical-data-science.jpg
+featuredImage: clinical-informatics.jpg
 members:
   - id: kirk-wilhelmsen
     role: Lead
