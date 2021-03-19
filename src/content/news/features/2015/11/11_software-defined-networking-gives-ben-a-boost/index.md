@@ -9,7 +9,7 @@ groups:
     - nrig
 projects:
     - exogeni
-    - panorama
+    - panorama-360
 people:
     - ilya-baldin
 teams: 
@@ -18,14 +18,14 @@ collaborations:
     - 
 tags:
     - networking
+    - testbed
 ---
-<em><a href="https://renci.org/wp-content/uploads/2015/11/BEN-Logo-9-final.jpg"><img class="alignright size-medium wp-image-15190" src="https://renci.org/wp-content/uploads/2015/11/BEN-Logo-9-final-300x157.jpg" alt="BEN Logo 9 final" width="300" height="157" /></a>Breakable Experimental Network (BEN) is now faster and SDN-enabled</em>
+![BEN Logo 9 final](https://renci.org/wp-content/uploads/2015/11/BEN-Logo-9-final-300x157.jpg)  
+_Breakable Experimental Network (BEN) is now faster and SDN-enabled_
 
-CHAPEL HILL, NC, November 10, 2015 - A collaboration between researchers at RENCI and the University of Houston means that RENCI's <a href="https://renci.org/news/benefits-of-ben/">Breakable Experimental Network</a> (BEN) will be faster and easier to use for scientists with data intensive research problems to solve.
+CHAPEL HILL, NC, November 10, 2015 - A collaboration between researchers at RENCI and the University of Houston means that RENCI's [Breakable Experimental Network](https://renci.org/news/benefits-of-ben/) (BEN) will be faster and easier to use for scientists with data intensive research problems to solve.
 
-
-
-BEN, an optical network test bed that connects UNC-Chapel Hill, RENCI, Duke University, and North Carolina State University, was developed and deployed by RENCI's networking research group nearly five years ago as a dark fiber network for experiments in networking technologies. BEN links the campuses to other high-speed research networks, such as <a href="http://www.internet2.edu/">Internet2</a> and the Department of Energy's <a href="https://www.es.net/">Energy Sciences Network</a> (ESnet) and provides an on ramp to the 20-plus nodes and computational resources of <a href="http://www.exogeni.net/">ExoGENI</a>, a RENCI-led project funded through the National Science Foundation's <a href="https://www.geni.net/">Global Environment for Network Innovation</a>s (GENI) initiative.
+BEN, an optical network test bed that connects UNC-Chapel Hill, RENCI, Duke University, and North Carolina State University, was developed and deployed by RENCI's networking research group nearly five years ago as a dark fiber network for experiments in networking technologies. BEN links the campuses to other high-speed research networks, such as [Internet2](http://www.internet2.edu/) and the Department of Energy's [Energy Sciences Network](https://www.es.net/) (ESnet) and provides an on ramp to the 20-plus nodes and computational resources of [ExoGENI](http://www.exogeni.net/), a RENCI-led project funded through the National Science Foundation's [Global Environment for Network Innovations](https://www.geni.net/) (GENI) initiative.
 
 But the BEN of old has undergone a makeover that means more speed and flexibility and access to even more nationwide resources.
 
@@ -39,7 +39,7 @@ Rather than build their own controller, Baldin's research team chose to partner 
 
 Bastin, a research assistant professor of computer engineering technology, described Mini-Ankh as a free version of the commercial Ankh controller that is part of the Enterprise Infrastructure Orchestration Environment (EIOE) developed by Barnstormer Softworks. A general release date and final list of features for the controller, which will likely undergo a name change to Ankh Lite, have not yet been set.
 
-"There is nothing more satisfying than building a technical solution and then seeing it put to good use," said Bastin. ""An added benefit for our research is that as the controller is tested in more diverse high performance networks, our team learns a lot that we can use in future development efforts to satisfy more research needs."
+"There is nothing more satisfying than building a technical solution and then seeing it put to good use," said Bastin. "An added benefit for our research is that as the controller is tested in more diverse high performance networks, our team learns a lot that we can use in future development efforts to satisfy more research needs."
 
 In addition to more muscle, the upgrade makes BEN a better fit for running data-intensive applications, since SDN can handle larger data transfers and, using the load balancing feature of the controller, allows for customized routing decisions to avoid bottlenecks that can slow down data transfers. Users of the upgraded BEN can still connect to the computing and software resources available through the ExoGENI infrastructure, but by using Mini-Ankh as the controller for SDN, they can also connect to resources beyond the ExoGENI sites.
 
@@ -47,8 +47,8 @@ In addition to more muscle, the upgrade makes BEN a better fit for running data-
 
 The partnership with the University of Houston could evolve into a continuing collaboration in the use of SDN as BEN's capabilities are further improved and the RENCI research team works to bump up data transfer speeds to 100 Gbps.
 
-<strong>RENCI networking research at SC15</strong>
+**RENCI networking research at SC15**
 
-RENCI's networking research group will be at the RENCI booth (#181) at <a href="http://sc15.supercomputing.org/">SC15</a>, the international conference for high performance computing, networking, storage and analysis in Austin, Texas, Nov. 17 – 19. Stop by the booth to learn more about ExoGENI. RENCI networking experts will also present <a href="https://renci.org/research/panorama/">PANORAMA</a>, an approach for modeling and diagnosing the run-time performance of complex scientific workflows, and the Resource Aware Data-centrIc collaboratIon Infrastructure (<a href="https://renci.org/radii/">RADII</a>), a cloud-based platform designed to enable data-centric collaborations. Another demonstration will deploy ExoGENI resources on <a href="https://www.cloudlab.us/">CloudLab</a>, a flexible, scientific infrastructure for research on the future of cloud computing.
+RENCI's networking research group will be at the RENCI booth (#181) at [SC15](http://sc15.supercomputing.org/), the international conference for high performance computing, networking, storage and analysis in Austin, Texas, Nov. 17 – 19\. Stop by the booth to learn more about ExoGENI. RENCI networking experts will also present [PANORAMA](https://renci.org/research/panorama/), an approach for modeling and diagnosing the run-time performance of complex scientific workflows, and the Resource Aware Data-centrIc collaboratIon Infrastructure ([RADII](https://renci.org/radii/)), a cloud-based platform designed to enable data-centric collaborations. Another demonstration will deploy ExoGENI resources on [CloudLab](https://www.cloudlab.us/), a flexible, scientific infrastructure for research on the future of cloud computing.
 
-RENCI iRODS team, developers of the integrated Rule-Oriented Data System, will also be in the RENCI booth offering demonstrations and information about iRODS and the iRODS Consortium. For a complete list of booth presentations, click <a href="https://renci.org/sc15-renci-booth-schedule/">here</a>.
+RENCI iRODS team, developers of the integrated Rule-Oriented Data System, will also be in the RENCI booth offering demonstrations and information about iRODS and the iRODS Consortium. For a complete list of booth presentations, click [here](https://renci.org/sc15-renci-booth-schedule/).
