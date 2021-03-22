@@ -3,6 +3,7 @@ import { Section } from '../layout'
 import styled from 'styled-components'
 import { connectStateResults, Hits, Index } from 'react-instantsearch-dom'
 import { CollaborationResult, GroupResult, NewsResult, PersonResult, ProjectResult } from './result'
+import { LoadingIndicator } from '../loading-indicator'
 
 const StyledHits = styled(Hits)`
   & ul {
@@ -11,44 +12,49 @@ const StyledHits = styled(Hits)`
   }
 `
 
-export const SearchResults = connectStateResults(({ searchState }) =>
-  searchState && searchState.query ? (
-    <Fragment>
-      <Section title="People">
-        <Index indexName="PEOPLE">
-          <StyledHits hitComponent={ PersonResult } />
-        </Index>
-      </Section>
+const Results = ({ title, indexName, hitComponent }) => {
+  return (
+    <Section title={ title }>
+      <Index indexName={ indexName }>
+        <StyledHits hitComponent={ hitComponent }/>
+      </Index>
+    </Section>
+  )
+}
 
-      <Section title="Groups">
-        <Index indexName="GROUPS">
-          <StyledHits hitComponent={ GroupResult }/>
-        </Index>
-      </Section>
+export const SearchResults = connectStateResults(({ searchState, searching, allSearchResults }) => {
+  console.log(allSearchResults, searching)
 
-      <Section title="Collaborations">
-        <Index indexName="COLLABORATIONS">
-          <StyledHits hitComponent={ CollaborationResult }/>
-        </Index>
-      </Section>
 
-      <Section title="Projects">
-        <Index indexName="PROJECTS">
-          <StyledHits hitComponent={ ProjectResult }/>
-        </Index>
-      </Section>
+  return (
+    searchState && searchState.query ? (
+      <Fragment key={ allSearchResults.nbhits || 'x' }>
+        {
+          allSearchResults.PEOPLE.nbHits > 0
+          && <Results title="People" indexName="PEOPLE" hitComponent={ PersonResult } />
+        }
 
-      <Section title="News">
-        <Index indexName="NEWS">
-          <StyledHits hitComponent={ NewsResult } />
-        </Index>
-      </Section>
+        {
+          allSearchResults.GROUPS.nbHits > 0
+          && <Results title="Groups" indexName="GROUPS" hitComponent={ GroupResult } />
+        }
 
-      <Section title="Blog">
-        <Index indexName="NEWS">
-          <StyledHits hitComponent={ NewsResult } />
-        </Index>
-      </Section>
-    </Fragment>
-  ) : null
+        {
+          allSearchResults.COLLABORATIONS.nbHits > 0
+          && <Results title="Collaborations" indexName="COLLABORATIONS" hitComponent={ CollaborationResult } />
+        }
+
+        {
+          allSearchResults.PROJECTS.nbHits > 0
+          && <Results title="Projects" indexName="PROJECTS" hitComponent={ ProjectResult } />
+        }
+
+        {
+          allSearchResults.NEWS.nbHits > 0
+          && <Results title="News" indexName="NEWS" hitComponent={ NewsResult }  />
+        }
+
+      </Fragment>
+    ) : null
+  )}
 )

@@ -9,6 +9,7 @@ import { NewsFilterForm, PaginationTray, NewsContext, NewsList } from '../compon
 import { LoadingIndicator } from '../components/loading-indicator'
 
 // constants
+const LOADING_TIME = 500
 const PER_PAGE = 10
 const PAGINATION_RADIUS = {
   mobile: 1,
@@ -70,7 +71,7 @@ const NewsPage = () => {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setLoading(false)
-    }, 500)
+    }, LOADING_TIME)
     return () => clearTimeout(loadingTimer)
   }, [loading])
 
@@ -140,7 +141,7 @@ const NewsPage = () => {
         {
           loading ? (
             <div style={{ minHeight: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <LoadingIndicator duration={ 500 / 2 } />
+              <LoadingIndicator duration={ LOADING_TIME / 2 } />
             </div>
           ) : (
           <Fragment>
