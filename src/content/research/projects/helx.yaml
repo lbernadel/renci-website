@@ -1,8 +1,0 @@
-id: helx
-name: HeLx
-description:  >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-renciRole: !markdown |
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-www:
-  - https://github.com/helxplatform
