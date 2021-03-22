@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 import { Link } from 'gatsby'
-import { IconButton } from '../buttons'
 import { Icon } from '../icon'
 import { Tray } from './tray'
 

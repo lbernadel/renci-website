@@ -70,7 +70,7 @@ export const StaffList = ({ staff = [], nav = false }) => {
       }
       <Profiles>
         {
-          staff.map(person => {
+          staff.map((person, i) => {
             const photo = person.photo ? person.photo.childImageSharp.fixed : avatar.childImageSharp.fixed
             previousLetter = currentLetter
             currentLetter = person.name.last[0].toLowerCase()
@@ -78,7 +78,7 @@ export const StaffList = ({ staff = [], nav = false }) => {
             return (
               <MiniProfile
                 anchorId={ anchorId }
-                key={ person.id }
+                key={ `${ i }-${ person.id }` }
                 name={ person.fullName }
                 descriptor={ person.title }
                 photo={ photo }

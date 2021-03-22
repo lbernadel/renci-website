@@ -1,0 +1,25 @@
+id: bdc3-cici
+name: BioData Catalyst CICI Program
+featuredImage: bdc3-cici.jpg
+description: >
+  The NIH Cloud Institutes and Centers Interoperability (CICI) project is working to enable a cloud data and computing infrastructure demonstrating interoperability between NIH Institutes and Centers (ICs). CICI will leverage existing infrastructure to create a cloud-native semantic fabric enabling ICs to share data and computation in the cloud.
+renciRole: !markdown |
+  RENCI is coordinating and working with partners to pilot an interoperable cloud data and computing infrastructure by leveraging core BioData Catalyst services. They are also working to provide an imputation server within the interoperable, secure, cloud native framework and to develop cost and optimization models of cloud computations. 
+members:
+  - id: stan-ahalt
+    role: Lead
+  - id: steve-cox
+    role: Lead
+  - id: asia-mieczkowska
+    role: Lead
+  - id: patrick-patton
+partners:
+  - rti-international
+  - michigan-imputation-server
+  - chop
+  - broad-institute
+  - deliotte-consulting
+funding:
+  - nhlbi
+  - nih-odss
+  
