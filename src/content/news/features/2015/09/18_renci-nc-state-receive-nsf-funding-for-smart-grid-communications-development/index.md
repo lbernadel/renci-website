@@ -39,12 +39,8 @@ Related work by Xin and Chakrabortty won awards for best application in the ener
 
 For more information:
 
-[White House "Smart Cities" Initiative](https://www.whitehouse.gov/the-press-office/2015/09/14/fact-sheet-administration-announces-new-smart-cities-initiative-help)
-
-[National Science Foundation Press Release](http://nsf.gov/news/news_summ.jsp?cntn_id=136263&org=NSF&from=news)
-
-[US Ignite blog post](https://www.us-ignite.org/blog/2015/9/us-ignite-to-launch-nationwide-network-of-ultra-high-speed-broadband-living-labs/)
-
-[NC State press release](http://www.ece.ncsu.edu/news/28497/chakrabortty-receives-nsf-grant-to-help-modernize-power-system-communications)
-
-[Project website](http://distinct.web.unc.edu/)
+- [White House "Smart Cities" Initiative](https://www.whitehouse.gov/the-press-office/2015/09/14/fact-sheet-administration-announces-new-smart-cities-initiative-help)
+- [National Science Foundation Press Release](http://nsf.gov/news/news_summ.jsp?cntn_id=136263&org=NSF&from=news)
+- [US Ignite blog post](https://www.us-ignite.org/blog/2015/9/us-ignite-to-launch-nationwide-network-of-ultra-high-speed-broadband-living-labs/)
+- [NC State press release](http://www.ece.ncsu.edu/news/28497/chakrabortty-receives-nsf-grant-to-help-modernize-power-system-communications)
+- [Project website](http://distinct.web.unc.edu/)

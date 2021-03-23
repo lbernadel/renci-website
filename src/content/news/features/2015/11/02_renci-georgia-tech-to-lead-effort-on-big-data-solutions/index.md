@@ -56,8 +56,8 @@ The SouthBD Hub will serve 21 partner institutions in the states of Alabama, Ark
 
 In addition to the South BD Hub, the NSF has funded Hubs in the Northeast, Midwest, and Western U.S., which are managed by universities in those regions.
 
-**UNC-Chapel Hill/RENCI contact**: Karen Green (919) 445-9648, [kgreen@renci.org](mailto:kgreen@renci.org)
+- **UNC-Chapel Hill/RENCI contact**: Karen Green (919) 445-9648, [kgreen@renci.org](mailto:kgreen@renci.org)
 
-**UNC Communications and Public Affairs contact**: Thania Benios, (919) 962-8596, [thania_benios@unc.edu](mailto:thania_benios@unc.edu)
+- **UNC Communications and Public Affairs contact**: Thania Benios, (919) 962-8596, [thania_benios@unc.edu](mailto:thania_benios@unc.edu)
 
-**Georgia Tech contact**: Tara La Bouff, (404)769-5408, [tlabouff@cc.gatech.edu](mailto:tlabouff@cc.gatech.edu)
+- **Georgia Tech contact**: Tara La Bouff, (404)769-5408, [tlabouff@cc.gatech.edu](mailto:tlabouff@cc.gatech.edu)
