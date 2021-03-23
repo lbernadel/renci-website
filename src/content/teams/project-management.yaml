@@ -1,6 +1,9 @@
 id: project-management
 name: Project Management
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+blurb: >
+  The Project Management team is responsible for managing highly complex research and team science coordination projects at RENCI. 
+description: !markdown |
+  The team is responsible for developing the project management strategy, supporting project plans, and managing project execution to ensure adherence to budget, schedule, reporting, deliverable requirements, and scope. PM team members, working with the Communications Team, provide strategic planning and outreach to funded research and engagement communities, including fostering relationships with collaborators to grow community networks and reach project milestones. Project Managers support proposal development on already assigned projects and potentially new, large collaborations. PM team members also help develop strategies for internal improvement and implement new processes and methods to make RENCI and its projects more effective and efficient. 
 members:
   - asia-mieczkowska
   - laura-capps

@@ -1,6 +1,9 @@
 id: finance
 name: Finance
-description: Finance lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, ipsum!
+role: >
+  The Finance Team oversees RENCI’s day-to-day fiscal management and research administration.
+description: !markdown |
+  The team is responsible for accounting, purchasing, travel, effort management and sponsored research administration. The Finance Team is responsible for managing all institutional and sponsored research funding, which comes from a variety of sources.  Additionally, the team provides assistance with submission of research proposals, ensuring that the institute remains in compliance with university, state and federal guidelines. 
 members:
   - kristi-andrews
   - tamara-sampson

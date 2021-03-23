@@ -1,7 +1,6 @@
 ---
 title: "iRODS Consortium welcomes Maastricht University as newest member"
 slug: irods-consortium-welcomes-maastricht-university-as-newest-member
-spotlight: false
 publishDate: 2018-12-06
 author: 
 featuredImage: null
@@ -15,23 +14,6 @@ teams:
     - 
 collaborations:
     - irods-consortium
-organizations:
-    - bayer
-    - cloudian
-    - ddn
-    - ibm
-    - maastricht-university
-    - msc
-    - netapp
-    - nih-niehs
-    - renci
-    - surf
-    - tacc
-    - university-college-london
-    - university-of-groningen
-    - utrecht-university
-    - wellcome-sanger-institute
-    - western-digital
 tags:
     - data-management
     - open-source

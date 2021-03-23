@@ -5,66 +5,66 @@ import { Title, Paragraph } from '../components/typography'
 import { PeopleList } from '../components/people'
 
 export default ({ data, pageContext }) => {
-    const { teamsYaml: {
-        name,
-        description,
-        members,
-        featuredImage
-    }} = data
-    
-    return (
-        <Fragment>
-            <Hero backgroundImage={ featuredImage && featuredImage.childImageSharp.fluid }>
-                <Title>{ name }</Title>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid incidunt quaerat distinctio est, inventore. Asperiores ex repudiandae quam saepe, blanditiis sed temporibus est dolore aperiam nobis? Aliquam eveniet, sit assumenda.
-                </p>
-            </Hero>
+  const { teamsYaml: {
+    name,
+    blurb,
+    description,
+    members,
+    featuredImage
+  }} = data
+  
+  return (
+    <Fragment>
+      <Hero backgroundImage={ featuredImage && featuredImage.childImageSharp.fluid }>
+        <Title>{ name }</Title>
+        <p>
+          { blurb }
+        </p>
+      </Hero>
 
-            <Container>
-                <Section title="Team Details">
-                    <Article title="Description">
-                        <Paragraph>
-                            { description }
-                        </Paragraph>
-                    </Article>
-                </Section>
+      <Container>
+        <Section title="Team Details">
+          <Article title="Description">
+            <div dangerouslySetInnerHTML={{ __html: description }} />
+          </Article>
+        </Section>
 
-                <Section title="Team Members">
-                    <Article>
-                        <PeopleList members={ members } />
-                    </Article>
-                </Section>
+        <Section title="Team Members">
+          <Article>
+            <PeopleList members={ members } />
+          </Article>
+        </Section>
 
-            </Container>
-        </Fragment>
-    )
+      </Container>
+    </Fragment>
+  )
 }
 
 export const teamQuery = graphql`
-    query($id: String!) {
-        teamsYaml( id: { eq: $id }) {
-            name
-            description
-            members {
-                id
-                fullName
-                name {
-                    first
-                    last
-                }
-                title
-                fields {
-                    path
-                }
-                photo {
-                    childImageSharp {
-                        fixed(width: 350, height: 350) {
-                            ...GatsbyImageSharpFixed
-                        }
-                    }
-                }
-            }
+  query($id: String!) {
+    teamsYaml( id: { eq: $id }) {
+      name
+      blurb
+      description
+      members {
+        id
+        fullName
+        name {
+          first
+          last
         }
+        title
+        fields {
+          path
+        }
+        photo {
+          childImageSharp {
+            fixed(width: 350, height: 350) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
     }
+  }
 `

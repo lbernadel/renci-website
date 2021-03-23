@@ -1,7 +1,7 @@
 ---
 title: "South Big Data Hub links talented students with tech startups through new program"
+subtitle: DataStart provides real-world experiences for students while helping entrepreneurial companies
 slug: south-big-data-hub-links-talented-students-with-tech-startups-through-new-program
-spotlight: false
 publishDate: 2016-05-24
 author: 
 featuredImage: null

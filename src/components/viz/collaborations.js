@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Button } from '../buttons'
 import loadable from '@loadable/component'
 
 const ForceGraph2D = loadable(() => import('./force-graph'))
@@ -9,10 +8,11 @@ const ForceGraph2D = loadable(() => import('./force-graph'))
 const equalArrays = (arr1, arr2) => JSON.stringify([...arr1].sort()) === JSON.stringify([...arr2].sort())
 
 const Wrapper = styled.div(({ theme }) => `
-  border: 1px solid ${ theme.color.grey };
-  margin: 2rem 0;
+  margin: -1rem 0 0 0;
   overflow: hidden;
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
   & .graph-tooltip {
     font-size: 66% !important;
     text-align: center;
@@ -20,21 +20,9 @@ const Wrapper = styled.div(({ theme }) => `
     padding: ${ theme.spacing.xs } !important;
     line-height: 1.5 !important;
   }
-  & .legend {
-    border-right: 1px solid ${ theme.color.grey };
-    padding: ${ theme.spacing.medium };
-    & > button {
-      margin: ${ theme.spacing.medium } 0;
-      &:first-child { margin-top: 0; }
-      &:last-child { margin-bottom: 0; }
-    }
-  }
-  & .graph {
-    flex: 1;    
-  }
 `)
 
-export const CollaborationsNetwork = ({ height = 800, width = 750 }) => {
+export const CollaborationsNetwork = ({ height = 500, width = 1000 }) => {
   const theme = useTheme()
   const data = useStaticQuery(collaborationsQuery)
   const [graphData, setGraphData] = useState({ nodes: [], edges: [] })
@@ -42,7 +30,6 @@ export const CollaborationsNetwork = ({ height = 800, width = 750 }) => {
   const collaborations = data.collaborations.edges.map(({ node }) => node)
   const [selectedNodes, setSelectedNodes] = useState(new Set())
   const [selectedRootNode, setSelectedRootNode] = useState(null)
-  const [fundingParticles, setFundingParticles] = useState(false)
 
   const nodeStyles = {
     person: {
@@ -232,33 +219,29 @@ export const CollaborationsNetwork = ({ height = 800, width = 750 }) => {
 
   return (
     <Wrapper>
-      <div className="legend">
-        <Button small variant={ fundingParticles ? 'warning' : '' } style={{ width: '100%' }} onClick={ () => setFundingParticles(!fundingParticles) }>Funding</Button>
-      </div>
-      <div className="graph">
-        {
-          graphData.nodes && graphData.links && (
-            <ForceGraph2D
-              height={ height }
-              width={ width }
-              graphData={ graphData }
-              nodeLabel={ node => node.name }
-              nodeVal={ node => node.val }
-              nodeRelSize={ 3 }
-              nodeColor={ node => selectedNodes.size ? selectedNodes.has(node) ? node.color.main : node.color.dim : node.color.main }
-              linkColor="black"
-              linkWidth={ edge => selectedNodes.size ? (selectedNodes.has(edge.source) && selectedNodes.has(edge.target)) ? 1.5 : 0.5 : 1.5 }
-              onNodeClick={ handleNodeClick }
-              nodeCanvasObjectMode={ node => selectedRootNode === node ? 'before' : undefined }
-              nodeCanvasObject={ nodeHighlight }
-              linkDirectionalParticles={ fundingParticles ? edgeParticles : null }
-              linkDirectionalParticleSpeed={ fundingParticles ? edgeParticlesSpeed : null }
-              linkDirectionalParticleColor={ e => fundingParticles && edgeStyles[e.type].particle.color }
-              linkLineDash={ e => e.type === 'partner' ? [2, 2] : [1,0] }
-            />
-          )
-        }
-      </div>
+      {
+        graphData.nodes && graphData.links && (
+          <ForceGraph2D
+            height={ height }
+            width={ width }
+            graphData={ graphData }
+            nodeLabel={ node => node.name }
+            nodeVal={ node => node.val }
+            nodeRelSize={ 3 }
+            nodeColor={ node => selectedNodes.size ? selectedNodes.has(node) ? node.color.main : node.color.dim : node.color.main }
+            linkColor="black"
+            linkWidth={ edge => selectedNodes.size ? (selectedNodes.has(edge.source) && selectedNodes.has(edge.target)) ? 1.5 : 0.5 : 1.5 }
+            onNodeClick={ handleNodeClick }
+            nodeCanvasObjectMode={ node => selectedRootNode === node ? 'before' : undefined }
+            nodeCanvasObject={ nodeHighlight }
+            linkDirectionalParticleColor={ e => edgeStyles[e.type].particle.color }
+            linkLineDash={ e => e.type === 'partner' ? [2, 2] : [1,0] }
+            enableZoomPanInteraction={ true }
+            enablePointerInteraction={ true }
+            zoomToFit={ () => (1000, 50) }
+          />
+        )
+      }
     </Wrapper>
   )
 }

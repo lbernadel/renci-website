@@ -1,7 +1,6 @@
 ---
 title: "Getting to know RENCI's Social Computing Rooms"
 slug: getting-to-know-rencis-social-computing-rooms
-spotlight: false
 publishDate: 2015-06-25
 author: 
 featuredImage: null
@@ -17,14 +16,13 @@ collaborations:
     - 
 tags:
     - students
+    - visualization
 ---
-<img class="alignleft size-full wp-image-14876" src="https://renci.org/wp-content/uploads/2015/06/social_comp3.jpeg" alt="social_comp3" width="640" height="426" />
+![social_comp3](https://renci.org/wp-content/uploads/2015/06/social_comp3.jpeg)
 
 CHAPEL HILL, NC – Big data and data presented as imagery hold great value as tools for educators and researchers, but working with enormous data sets can be overwhelming.
 
 Medical records, social networking data, environmental measurements gleaned from remote sensors, online transactions, and more can help doctors diagnose their patients, allow businesses to better serve their customers, and help scientists understand everything from how cancers spread to the impact of climate change on ecosystems.
-
-
 
 Yes, the data is available, but the people who need to use it struggle to examine it in ways that are intuitive and allow for group collaboration.
 
@@ -36,6 +34,6 @@ Three SCRs now exist at Triangle area universities, including the room at ITS Ma
 
 Each room holds up to 15 people comfortably and includes three projectors (12 per wall) to create a continuous, floor-to-ceiling display. A simple Windows computer controls the displays and users can access standard software, such as web browsers and PowerPoint, or load their own software. In addition, every SCR includes built in cameras, speakers, microphones, and an echo-cancelling audio system to support high-quality, immersive presentations and video and audio conferencing.
 
-The rooms—all available for use free of charge—have been popular and RENCI has documented the development of the SCRs and some of their uses in a white paper entitled <em>Getting to Know the Social Computing Rooms</em>.
+The rooms—all available for use free of charge—have been popular and RENCI has documented the development of the SCRs and some of their uses in a white paper entitled _Getting to Know the Social Computing Rooms_.
 
-To learn more about SCRs and how faculty and students are using them, read the white paper <a href="https://renci.org/White-Paper-2015-SCR">here</a>.
+To learn more about SCRs and how faculty and students are using them, read the white paper at [https://renci.org/White-Paper-2015-SCR](https://renci.org/White-Paper-2015-SCR).

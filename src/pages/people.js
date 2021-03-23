@@ -6,7 +6,7 @@ import { Title } from '../components/typography'
 import { StaffList } from '../components/people'
 
 const PeoplePage = () => {
-  const { staff, ood, management, chiefScientists } = usePeople()
+  const { staff, ood } = usePeople()
 
   useEffect(() => {
     const handleKeyDown = event => {
@@ -32,14 +32,6 @@ const PeoplePage = () => {
       
       <Section title="Office of the Director" fullWidth>
         <StaffList staff={ ood } />
-      </Section>
-
-      <Section title="Management Team" fullWidth>
-        <StaffList staff={ management } />
-      </Section>
-
-      <Section title="Chief Scientists" fullWidth>
-        <StaffList staff={ chiefScientists } />
       </Section>
 
       <Section title="All Staff" fullWidth>

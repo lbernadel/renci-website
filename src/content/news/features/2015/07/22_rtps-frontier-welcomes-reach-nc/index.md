@@ -1,7 +1,6 @@
 ---
 title: "RTP's Frontier Welcomes REACH NC"
 slug: rtps-frontier-welcomes-reach-nc
-spotlight: false
 publishDate: 2015-07-22
 author: 
 featuredImage: null
@@ -16,11 +15,9 @@ teams:
 collaborations:
     - 
 tags:
-    - 
+    - networking
 ---
 RESEARCH TRIANGLE PARK, NC – REACH NC, the Web portal that helps bring the expertise of thousands of North Carolina-based researchers to businesses, developers, government agencies, and the public, has a new home at The Frontier, the new state-of-the-art space in Research Triangle Park designed to foster collaboration and community among business people and entrepreneurs.
-
-
 
 REACH NC staff will move to the new space—the first completed project at RTP's Park Center development—next week. The move will give REACH NC (Research, Engagement and Capabilities Hub of North Carolina) greater visibility among RTP tenants who could benefit from tapping into its portal for information about experts at North Carolina universities and research centers.
 
@@ -36,8 +33,6 @@ Stakeholders and interested members of the public can learn more about REACH NC 
 
 REACH NC is supported by initial funding from NC TraCS at UNC-Chapel Hill, UNC General Administration, UNC's Renaissance Computing Institute (RENCI), and Duke University. Additional support has been received from the Golden LEAF Foundation, the North Carolina Biotechnology Center, the Triangle Universities Center for Advanced Studies, Inc. and the Research Triangle Foundation.
 
-For more information on REACH NC, please see <a href="http://www.reachnc.org">www.reachnc.org</a>.
+For more information on REACH NC, please see [www.reachnc.org](http://www.reachnc.org).
 
-For more information on The Frontier, see <a href="http://www.rtp.org/about-us/the-frontier/">http://www.rtp.org/about-us/the-frontier/</a>
-
-&nbsp;
+For more information on The Frontier, see [http://www.rtp.org/about-us/the-frontier/](http://www.rtp.org/about-us/the-frontier/).

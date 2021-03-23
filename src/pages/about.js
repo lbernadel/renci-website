@@ -5,7 +5,6 @@ import { Title, Paragraph } from '../components/typography'
 import { List } from '../components/list'
 import { ArrowLink } from '../components/link'
 import { useOrganizations } from '../hooks'
-import { OrganizationsList } from '../components/organizations'
 import { CollaborationsNetwork } from '../components/viz'
 
 const AboutPage = () => {

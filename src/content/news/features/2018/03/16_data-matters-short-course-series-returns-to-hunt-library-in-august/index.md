@@ -1,7 +1,6 @@
 ---
 title: "Data Matters™ Short Course Series Returns to Hunt Library in August"
 slug: data-matters-short-course-series-returns-to-hunt-library-in-august
-spotlight: false
 publishDate: 2018-03-16
 author: 
 featuredImage: null
@@ -16,10 +15,9 @@ teams:
     - 
 collaborations:
     - ncds
-organizations:
-    - odum-institute
 tags:
     - training
+    - students
 ---
 
 We live in a data-driven world, and as researchers, business professionals, and government policymakers struggle to stay on top of the latest data science trends and practices, the Data Matters™ Short Course Series returns to offer a week full of education and training.
