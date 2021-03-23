@@ -7,6 +7,8 @@ author:
 featuredImage: null
 groups:
     - nrig
+    - systems
+    - data-science-and-analytics
 projects:
     - scidas
     - irods
