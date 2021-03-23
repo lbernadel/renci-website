@@ -47,7 +47,5 @@ export const usePeople = () => {
   return {
     staff: staff.edges.map(({ node }) => node),
     ood: ood.edges.map(({ node }) => node),
-    management: management.edges.map(({ node }) => node),
-    chiefScientists: chiefscientists.edges.map(({ node }) => node),
   }
 }
