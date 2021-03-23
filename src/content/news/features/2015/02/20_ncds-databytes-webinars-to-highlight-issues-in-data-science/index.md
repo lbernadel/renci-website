@@ -1,7 +1,6 @@
 ---
 title: "NCDS DataBytes webinars to highlight issues in data science"
 slug: ncds-databytes-webinars-to-highlight-issues-in-data-science
-spotlight: false
 publishDate: 2015-02-20
 author: 
 featuredImage: null

@@ -1,7 +1,6 @@
 ---
 title: "iRODS Consortium welcomes NASA's Atmospheric Science Data Center"
 slug: irods-consortium-welcomes-nasas-atmospheric-science-data-center
-spotlight: false
 publishDate: 2015-02-09
 author: 
 featuredImage: null

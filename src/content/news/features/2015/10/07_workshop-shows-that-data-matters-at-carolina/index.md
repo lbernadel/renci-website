@@ -1,7 +1,6 @@
 ---
 title: "Workshop shows that data matters at Carolina"
 slug: workshop-shows-that-data-matters-at-carolina
-spotlight: false
 publishDate: 2015-10-07
 author: 
 featuredImage: null

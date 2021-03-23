@@ -2,7 +2,6 @@
 title: "New study suggests hallucinations, alone, do not predict onset of schizophrenia"
 subtitle: An analysis of psychological symptoms aims to refine diagnostic criteria for teens at high risk of developing the brain disorder that affects millions of people worldwide
 slug: hallucinations-alone-do-not-predict-onset-of-schizophrenia
-spotlight: false
 publishDate: 2015-10-09
 author: 
 featuredImage: null

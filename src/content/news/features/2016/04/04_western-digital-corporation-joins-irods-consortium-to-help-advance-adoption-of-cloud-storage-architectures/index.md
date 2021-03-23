@@ -2,7 +2,6 @@
 title: "Western Digital Corporation joins iRODS Consortium to help advance adoption of cloud storage architectures"
 subtitle: WDC to provide targeted technology enhancements to expand data movement options for life science and other data intensive workflows
 slug: western-digital-corporation-joins-irods-consortium-to-help-advance-adoption-of-cloud-storage-architectures
-spotlight: false
 publishDate: 2016-04-04
 author: 
 featuredImage: null

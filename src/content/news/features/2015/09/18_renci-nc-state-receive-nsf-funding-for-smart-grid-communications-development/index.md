@@ -1,7 +1,6 @@
 ---
 title: "RENCI, NC State receives NSF funding for smart grid communications development"
 slug: renci-nc-state-receives-nsf-funding-for-smart-grid-communications-development
-spotlight: false
 publishDate: 2015-09-18
 author: 
 featuredImage: null

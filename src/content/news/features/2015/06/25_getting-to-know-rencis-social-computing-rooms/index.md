@@ -1,7 +1,6 @@
 ---
 title: "Getting to know RENCI's Social Computing Rooms"
 slug: getting-to-know-rencis-social-computing-rooms
-spotlight: false
 publishDate: 2015-06-25
 author: 
 featuredImage: null

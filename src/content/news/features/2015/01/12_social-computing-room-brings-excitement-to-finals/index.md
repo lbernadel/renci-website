@@ -1,7 +1,6 @@
 ---
 title: "Social Computing Room brings excitement to finals"
 slug: social-computing-room-brings-excitement-to-finals
-spotlight: false
 publishDate: 2015-01-12
 author: 
 featuredImage: null

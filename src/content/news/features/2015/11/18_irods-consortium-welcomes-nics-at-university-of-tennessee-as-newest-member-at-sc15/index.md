@@ -2,7 +2,6 @@
 title: "iRODS Consortium welcomes NICS at University of Tennessee as newest member at SC15"
 subtitle: Consortium membership doubles since last Supercomputing Conference
 slug: irods-consortium-welcomes-nics-at-university-of-tennessee-as-newest-member-at-sc15
-spotlight: false
 publishDate: 2015-11-18
 author: 
 featuredImage: null

@@ -1,7 +1,6 @@
 ---
 title: "iRODS Consortium announces iRODS Partners and iRODS Hub to support growing user-developer community"
 slug: irods-consortium-announces-irods-partners-and-hub
-spotlight: false
 publishDate: 2015-07-29
 author: 
 featuredImage: null

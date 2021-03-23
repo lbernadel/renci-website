@@ -2,7 +2,6 @@
 title: "Harnessing the power of data for quality breast cancer detection"
 subtitle: RENCI-enhanced software helps reduce false positives and maintain compliance
 slug: harnessing-the-power-of-data-for-quality-breast-cancer-detection
-spotlight: false
 publishDate: 2015-08-06
 author: ["stephanie-suber"]
 featuredImage: null

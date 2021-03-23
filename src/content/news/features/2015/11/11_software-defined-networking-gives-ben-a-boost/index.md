@@ -2,7 +2,6 @@
 title: "Software Defined Networking gives BEN a boost"
 subtitle: Breakable Experimental Network (BEN) is now faster and SDN-enabled
 slug: software-defined-networking-gives-ben-a-boost
-spotlight: false
 publishDate: 2015-11-11
 author: 
 featuredImage: null

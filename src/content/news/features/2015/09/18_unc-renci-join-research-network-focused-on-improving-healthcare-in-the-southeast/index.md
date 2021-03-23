@@ -2,7 +2,6 @@
 title: "UNC, RENCI joins research network focused on improving healthcare in the Southeast"
 subtitle: RENCI will participate in informatics team for new translational medicine award
 slug: unc-renci-joins-research-network-focused-on-improving-healthcare-in-the-southeast
-spotlight: false
 publishDate: 2015-09-18
 author: 
 featuredImage: null

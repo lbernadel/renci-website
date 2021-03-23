@@ -1,7 +1,6 @@
 ---
 title: "iRODS helps astronomers take control of massive survey data"
 slug: irods-helps-astronomers-take-control-of-massive-survey-data
-spotlight: false
 publishDate: 2016-01-07
 author: 
 featuredImage: null
