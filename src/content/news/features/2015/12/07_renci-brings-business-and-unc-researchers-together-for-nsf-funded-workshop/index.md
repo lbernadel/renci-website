@@ -15,8 +15,8 @@ teams:
     - 
 collaborations:
     - 
-tags: networking
-    - 
+tags: 
+    - networking
 ---
 [![iUCRC-1](https://renci.org/wp-content/uploads/2015/12/iUCRC-1-300x192.jpg)](https://renci.org/wp-content/uploads/2015/12/iUCRC-1.jpg)
 
